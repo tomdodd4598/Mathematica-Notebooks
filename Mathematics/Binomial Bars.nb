@@ -1,0 +1,138 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5334,        129]
+NotebookOptionsPosition[      5021,        113]
+NotebookOutlinePosition[      5363,        128]
+CellTagsIndexPosition[      5320,        125]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"n", "=", "4"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"BarChart", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"PDF", "[", 
+        RowBox[{
+         RowBox[{"BinomialDistribution", "[", 
+          RowBox[{"n", ",", "p"}], "]"}], ",", "k"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "0", ",", "n"}], "}"}]}], "]"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1"}], "}"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"p", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7392571489784393`*^9, 3.7392571791374273`*^9}, {
+   3.739257209737962*^9, 3.7392573314098644`*^9}, {3.739257371705429*^9, 
+   3.739257445016045*^9}, {3.7392575522957306`*^9, 3.7392575626390953`*^9}, {
+   3.7392577818298545`*^9, 3.739257839316788*^9}, {3.7392578735647345`*^9, 
+   3.739257877749431*^9}, {3.7392579619488506`*^9, 3.7392579670446105`*^9}, {
+   3.7392593954347982`*^9, 3.739259395874346*^9}, 3.739259555721977*^9, 
+   3.7392597089434204`*^9, {3.739259743279114*^9, 3.7392597648309517`*^9}, {
+   3.739259795551366*^9, 3.7392597991196938`*^9}, {3.7392598635913982`*^9, 
+   3.739259864590371*^9}, {3.7392599467578797`*^9, 3.739259951974516*^9}, {
+   3.7392599970781364`*^9, 3.7392599972299805`*^9}, {3.7392600277895565`*^9, 
+   3.7392600283260045`*^9}, {3.7392606656891747`*^9, 3.739260668080715*^9}, 
+   3.739261828264465*^9, {3.739262004704035*^9, 3.739262033335593*^9}, {
+   3.7392621010789337`*^9, 3.739262123270115*^9}, 3.7392625349797025`*^9, {
+   3.7392628061538363`*^9, 3.7392628153776484`*^9}, 3.7392777601332197`*^9, {
+   3.7392790764834485`*^9, 3.7392790889156647`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`p$$ = 0.7025, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`p$$], 0, 1}}, Typeset`size$$ = {360., {107., 112.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`p$140881$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`p$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`p$$, $CellContext`p$140881$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> BarChart[
+        Table[
+         PDF[
+          
+          BinomialDistribution[$CellContext`n, $CellContext`p$$], \
+$CellContext`k], {$CellContext`k, 0, $CellContext`n}], PlotRange -> {0, 1}], 
+      "Specifications" :> {{$CellContext`p$$, 0, 1, AnimationRunning -> False,
+          AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {146., 152.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.7392572502742786`*^9, {3.73925728358704*^9, 3.7392572936876535`*^9}, {
+   3.7392573775074635`*^9, 3.739257420026741*^9}, 3.739257563140579*^9, {
+   3.7392578316636105`*^9, 3.739257839730363*^9}, 3.7392579711543846`*^9, 
+   3.739259397043144*^9, 3.7392595573622904`*^9, 3.739259830803114*^9, 
+   3.739259865718211*^9, 3.7392606686141667`*^9, 3.739261828796917*^9, 
+   3.7392621262420588`*^9, 3.7392625355790863`*^9, {3.739262809045562*^9, 
+   3.73926281563838*^9}, 3.739277760757578*^9, {3.739279077025891*^9, 
+   3.739279089461104*^9}}]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 572}, {64, Automatic}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1819, 35, 72, "Input"],
+Cell[2402, 59, 2603, 51, 315, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

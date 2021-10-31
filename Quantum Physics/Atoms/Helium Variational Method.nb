@@ -1,0 +1,192 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6264,        183]
+NotebookOptionsPosition[      5761,        161]
+NotebookOutlinePosition[      6102,        176]
+CellTagsIndexPosition[      6059,        173]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"NIntegrate", "[", 
+  RowBox[{
+   RowBox[{"2", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"8", "/", "Pi"}], ")"}], 
+        RowBox[{"Exp", "[", 
+         RowBox[{
+          RowBox[{"-", "2"}], 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Sqrt", "[", 
+             RowBox[{
+              RowBox[{"x", "^", "2"}], "+", 
+              RowBox[{"y", "^", "2"}], "+", 
+              RowBox[{"z", "^", "2"}]}], "]"}], "+", 
+            RowBox[{"Sqrt", "[", 
+             RowBox[{
+              RowBox[{"X", "^", "2"}], "+", 
+              RowBox[{"Y", "^", "2"}], "+", 
+              RowBox[{"Z", "^", "2"}]}], "]"}]}], ")"}]}], "]"}]}], ")"}], 
+      "^", "2"}], "/", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"x", "-", "X"}], ")"}], "^", "2"}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"y", "-", "Y"}], ")"}], "^", "2"}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"z", "-", "Z"}], ")"}], "^", "2"}]}], "]"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{
+      RowBox[{"-", "6"}], "Pi"}], ",", 
+     RowBox[{"6", "Pi"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{
+      RowBox[{"-", "6"}], "Pi"}], ",", 
+     RowBox[{"6", "Pi"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{
+      RowBox[{"-", "6"}], "Pi"}], ",", 
+     RowBox[{"6", "Pi"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"X", ",", 
+     RowBox[{
+      RowBox[{"-", "6"}], "Pi"}], ",", 
+     RowBox[{"6", "Pi"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"Y", ",", 
+     RowBox[{
+      RowBox[{"-", "6"}], "Pi"}], ",", 
+     RowBox[{"6", "Pi"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"Z", ",", 
+     RowBox[{
+      RowBox[{"-", "6"}], "Pi"}], ",", 
+     RowBox[{"6", "Pi"}]}], "}"}], ",", 
+   RowBox[{"MaxRecursion", "\[Rule]", "100000"}], ",", 
+   RowBox[{"Method", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"GlobalAdaptive", ",", 
+      RowBox[{"MaxErrorIncreases", "\[Rule]", "1000000"}]}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6799943671838408`*^9, 3.6799944576734467`*^9}, {
+   3.679994798062957*^9, 3.679994805494648*^9}, 3.679995011998176*^9, {
+   3.679995054693898*^9, 3.679995076924961*^9}, 3.6799951237746286`*^9, {
+   3.67999517296483*^9, 3.6799951740210705`*^9}, {3.679995587754282*^9, 
+   3.679995589793746*^9}, {3.680193375826584*^9, 3.680193417418522*^9}, {
+   3.6801969052895365`*^9, 3.680196934016077*^9}, {3.7367916480281415`*^9, 
+   3.736791679834093*^9}, {3.736795408824735*^9, 3.7367954693971024`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "slwcon"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Numerical integration converging too slowly; suspect one \
+of the following: singularity, value of the integration is 0, highly \
+oscillatory integrand, or WorkingPrecision too small. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/slwcon\\\", ButtonNote -> \
+\\\"NIntegrate::slwcon\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6801969566082215`*^9, 3.736791684320733*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "eincr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The global error of the strategy GlobalAdaptive has \
+increased more than \[NoBreak]\\!\\(1000000\\)\[NoBreak] times. The global \
+error is expected to decrease monotonically after a number of integrand \
+evaluations. Suspect one of the following: the working precision is \
+insufficient for the specified precision goal; the integrand is highly \
+oscillatory or it is not a (piecewise) smooth function; or the true value of \
+the integral is 0. Increasing the value of the GlobalAdaptive option \
+MaxErrorIncreases might lead to a convergent numerical integration. \
+NIntegrate obtained \[NoBreak]\\!\\(2.491317038252394`\\)\[NoBreak] and \
+\[NoBreak]\\!\\(0.051832379645578075`\\)\[NoBreak] for the integral and error \
+estimates. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
+\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/eincr\\\", ButtonNote -> \
+\\\"NIntegrate::eincr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6801969566082215`*^9, 3.7367934724440403`*^9}],
+
+Cell[BoxData["2.491317038252394`"], "Output",
+ CellChangeTimes->{3.680199562478588*^9, 3.7367934929362245`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "8"}], "+", "2.49"}], ")"}], "*", "13.6", " ", 
+  "eV"}]], "Input",
+ CellChangeTimes->{{3.679996867711742*^9, 3.679996877265787*^9}, {
+  3.6801968807449474`*^9, 3.680196882008235*^9}, {3.680217284636939*^9, 
+  3.680217289317005*^9}, {3.736791475834643*^9, 3.7367915021038723`*^9}, {
+  3.7368017505963035`*^9, 3.736801764702575*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "74.93599999999999`"}], " ", "eV"}]], "Output",
+ CellChangeTimes->{3.6799968779220743`*^9, 3.680217290876359*^9, 
+  3.7368017699904227`*^9}]
+}, Open  ]]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2673, 79, 52, "Input"],
+Cell[3256, 103, 602, 11, 21, "Message"],
+Cell[3861, 116, 1150, 19, 57, "Message"],
+Cell[5014, 137, 111, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5162, 143, 401, 9, 31, "Input"],
+Cell[5566, 154, 179, 4, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

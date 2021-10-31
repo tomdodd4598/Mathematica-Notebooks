@@ -1,0 +1,323 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12200,        314]
+NotebookOptionsPosition[     11842,        297]
+NotebookOutlinePosition[     12184,        312]
+CellTagsIndexPosition[     12141,        309]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Alpha]", "=", 
+   RowBox[{"1", "/", "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Beta]", "=", 
+   RowBox[{"I", "/", "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Gamma]", "=", 
+   RowBox[{
+    RowBox[{"-", "1"}], "/", "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Delta]", "=", 
+   RowBox[{
+    RowBox[{"-", "I"}], "/", "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"w", "=", 
+    RowBox[{"4", "Pi"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"a", "[", "t_", "]"}], "=", 
+   RowBox[{"\[Alpha]", " ", 
+    RowBox[{"Exp", "[", 
+     RowBox[{
+      RowBox[{"-", "I"}], " ", "w", " ", 
+      RowBox[{"t", "/", "4"}]}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"b", "[", "t_", "]"}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"\[Beta]", "+", "\[Gamma]", "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"\[Beta]", "-", "\[Gamma]"}], ")"}], 
+       RowBox[{"Exp", "[", 
+        RowBox[{"I", " ", "w", " ", "t"}], "]"}]}]}], ")"}], 
+    RowBox[{
+     RowBox[{"Exp", "[", 
+      RowBox[{
+       RowBox[{"-", "I"}], " ", "w", " ", 
+       RowBox[{"t", "/", "4"}]}], "]"}], "/", "2"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"c", "[", "t_", "]"}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"\[Beta]", "+", "\[Gamma]", "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"\[Gamma]", "-", "\[Beta]"}], ")"}], 
+       RowBox[{"Exp", "[", 
+        RowBox[{"I", " ", "w", " ", "t"}], "]"}]}]}], ")"}], 
+    RowBox[{
+     RowBox[{"Exp", "[", 
+      RowBox[{
+       RowBox[{"-", "I"}], " ", "w", " ", 
+       RowBox[{"t", "/", "4"}]}], "]"}], "/", "2"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"d", "[", "t_", "]"}], "=", 
+    RowBox[{"\[Delta]", " ", 
+     RowBox[{"Exp", "[", 
+      RowBox[{
+       RowBox[{"-", "I"}], " ", "w", " ", 
+       RowBox[{"t", "/", "4"}]}], "]"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Animate", "[", 
+   RowBox[{
+    RowBox[{"BarChart", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Re", "[", 
+           RowBox[{"a", "[", "t", "]"}], "]"}], ",", 
+          RowBox[{"Im", "[", 
+           RowBox[{"a", "[", "t", "]"}], "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Re", "[", 
+           RowBox[{"b", "[", "t", "]"}], "]"}], ",", 
+          RowBox[{"Im", "[", 
+           RowBox[{"b", "[", "t", "]"}], "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Re", "[", 
+           RowBox[{"c", "[", "t", "]"}], "]"}], ",", 
+          RowBox[{"Im", "[", 
+           RowBox[{"c", "[", "t", "]"}], "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Re", "[", 
+           RowBox[{"d", "[", "t", "]"}], "]"}], ",", 
+          RowBox[{"Im", "[", 
+           RowBox[{"d", "[", "t", "]"}], "]"}]}], "}"}]}], "}"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}], ",", 
+         RowBox[{"1", "/", 
+          RowBox[{"Sqrt", "[", "2", "]"}]}]}], "}"}]}], ",", 
+      RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", "0", ",", "10"}], "}"}], ",", 
+    RowBox[{"AnimationRate", "\[Rule]", "1"}], ",", 
+    RowBox[{"AnimationRunning", "\[Rule]", "False"}], ",", 
+    RowBox[{"RefreshRate", "\[Rule]", "60"}]}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"BarChart", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Abs", "[", 
+         RowBox[{"a", "[", "t", "]"}], "]"}], "^", "2"}], ",", 
+       RowBox[{
+        RowBox[{"Abs", "[", 
+         RowBox[{"b", "[", "t", "]"}], "]"}], "^", "2"}], ",", 
+       RowBox[{
+        RowBox[{"Abs", "[", 
+         RowBox[{"c", "[", "t", "]"}], "]"}], "^", "2"}], ",", 
+       RowBox[{
+        RowBox[{"Abs", "[", 
+         RowBox[{"d", "[", "t", "]"}], "]"}], "^", "2"}]}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0.5"}], "}"}]}], ",", 
+     RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"AnimationRate", "\[Rule]", "1"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}], ",", 
+   RowBox[{"RefreshRate", "\[Rule]", "60"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.656787792023555*^9, 3.656787793649638*^9}, {
+   3.6567878821056805`*^9, 3.656788119598195*^9}, {3.6567881784855366`*^9, 
+   3.656788189148952*^9}, {3.65678826498832*^9, 3.656788434796564*^9}, 
+   3.6567885014216595`*^9, {3.6567885472285814`*^9, 3.656788579203826*^9}, {
+   3.656788621787473*^9, 3.6567886375863113`*^9}, {3.656788812866127*^9, 
+   3.656788817826252*^9}, {3.656793603144719*^9, 3.6567936395629706`*^9}, {
+   3.6567937235427923`*^9, 3.6567937434813104`*^9}, {3.656793775431549*^9, 
+   3.6567938970781097`*^9}, {3.6567939939190507`*^9, 3.656793995853488*^9}, {
+   3.656794031206498*^9, 3.6567941739088297`*^9}, 3.6571076634394913`*^9, {
+   3.666981268684901*^9, 3.666981326435135*^9}, {3.668440004393005*^9, 
+   3.6684400247436676`*^9}, {3.668440958543643*^9, 3.668440973266017*^9}, {
+   3.687355779845169*^9, 3.687355838271201*^9}, {3.6873558840489283`*^9, 
+   3.687356037309024*^9}, {3.687356384021271*^9, 3.687356529482328*^9}, {
+   3.6873565620151186`*^9, 3.6873566417545333`*^9}, {3.687438582858093*^9, 
+   3.6874385866864414`*^9}, {3.7274760272623825`*^9, 3.7274760369390364`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {360., {105., 110.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`t$763$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$763$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> BarChart[{{
+          Re[
+           $CellContext`a[$CellContext`t$$]], 
+          Im[
+           $CellContext`a[$CellContext`t$$]]}, {
+          Re[
+           $CellContext`b[$CellContext`t$$]], 
+          Im[
+           $CellContext`b[$CellContext`t$$]]}, {
+          Re[
+           $CellContext`c[$CellContext`t$$]], 
+          Im[
+           $CellContext`c[$CellContext`t$$]]}, {
+          Re[
+           $CellContext`d[$CellContext`t$$]], 
+          Im[
+           $CellContext`d[$CellContext`t$$]]}}, 
+        PlotRange -> {(-1)/Sqrt[2], 1/Sqrt[2]}, Frame -> True], 
+      "Specifications" :> {{$CellContext`t$$, 0, 10, AnimationRate -> 1, 
+         AnimationRunning -> False, RefreshRate -> 60, 
+         AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {144., 150.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6669812017525635`*^9, {3.6669813181772428`*^9, 3.6669813278724637`*^9}, 
+   3.668439350270115*^9, {3.6684400101983347`*^9, 3.668440025253785*^9}, 
+   3.668440937565836*^9, 3.668441964518157*^9, {3.687355991872639*^9, 
+   3.687356038216526*^9}, 3.6873565352216644`*^9, {3.687356595067685*^9, 
+   3.6873566434752502`*^9}, 3.687438590288265*^9, 3.72747603876941*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {360., {108., 114.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`t$882$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$882$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> BarChart[{Abs[
+           $CellContext`a[$CellContext`t$$]]^2, Abs[
+           $CellContext`b[$CellContext`t$$]]^2, Abs[
+           $CellContext`c[$CellContext`t$$]]^2, Abs[
+           $CellContext`d[$CellContext`t$$]]^2}, PlotRange -> {0, 0.5}, Frame -> 
+        True], "Specifications" :> {{$CellContext`t$$, 0, 10, AnimationRate -> 
+         1, AnimationRunning -> False, RefreshRate -> 60, 
+         AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {147., 153.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6669812017525635`*^9, {3.6669813181772428`*^9, 3.6669813278724637`*^9}, 
+   3.668439350270115*^9, {3.6684400101983347`*^9, 3.668440025253785*^9}, 
+   3.668440937565836*^9, 3.668441964518157*^9, {3.687355991872639*^9, 
+   3.687356038216526*^9}, 3.6873565352216644`*^9, {3.687356595067685*^9, 
+   3.6873566434752502`*^9}, 3.687438590288265*^9, 3.7274760388791313`*^9}]
+}, Open  ]]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 5849, 159, 312, "Input"],
+Cell[6432, 183, 2848, 61, 311, "Output"],
+Cell[9283, 246, 2543, 48, 317, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -1,0 +1,485 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     17216,        476]
+NotebookOptionsPosition[     16819,        458]
+NotebookOutlinePosition[     17161,        473]
+CellTagsIndexPosition[     17118,        470]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"PokerGames", "[", "players_", "]"}], ":=", 
+  RowBox[{"2", "*", 
+   RowBox[{"Binomial", "[", 
+    RowBox[{
+     RowBox[{"49", "-", 
+      RowBox[{"2", "*", "players"}]}], ",", "2"}], "]"}], "*", 
+   RowBox[{"Binomial", "[", 
+    RowBox[{
+     RowBox[{"52", "-", 
+      RowBox[{"2", "*", "players"}]}], ",", "3"}], "]"}], "*", 
+   RowBox[{"Product", "[", 
+    RowBox[{
+     RowBox[{"Binomial", "[", 
+      RowBox[{
+       RowBox[{"54", "-", 
+        RowBox[{"2", "k"}]}], ",", "2"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"k", ",", "1", ",", "players"}], "}"}]}], 
+    "]"}]}]}], "\[IndentingNewLine]", "\"\<Possible Games with n Players - \
+Log Plot:\>\"", "\[IndentingNewLine]", 
+ RowBox[{"DiscretePlot", "[", 
+  RowBox[{
+   RowBox[{"Log10", "[", 
+    RowBox[{"PokerGames", "[", "n", "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "0", ",", "23"}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Column", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<n = \>\"", "<>", 
+       RowBox[{"ToString", "[", "n", "]"}], "<>", "\"\< ->\>\""}], ",", 
+      RowBox[{"ScientificForm", "[", 
+       RowBox[{
+        RowBox[{"N", "[", 
+         RowBox[{"PokerGames", "[", "n", "]"}], "]"}], ",", "2"}], "]"}]}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "0", ",", "23"}], "}"}]}], "]"}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.7222991979722457`*^9, 3.7222996579682455`*^9}, {
+  3.7222996952492275`*^9, 3.722299751727252*^9}, {3.7222998244161425`*^9, 
+  3.722299859742891*^9}, {3.7222999034076076`*^9, 3.7222999417822933`*^9}, {
+  3.7222999767991533`*^9, 3.7223000538209105`*^9}, {3.7223001396534524`*^9, 
+  3.7223001438615136`*^9}, {3.722300242731561*^9, 3.7223002542441807`*^9}, {
+  3.7223003884598403`*^9, 3.722300415410015*^9}, {3.7223004494369373`*^9, 
+  3.722300706593113*^9}, {3.722300814232706*^9, 3.7223008906489224`*^9}, {
+  3.7223009244318047`*^9, 3.7223009270722675`*^9}}],
+
+Cell[BoxData["\<\"Possible Games with n Players - Log Plot:\"\>"], "Output",
+ CellChangeTimes->{
+  3.7222993251258936`*^9, {3.7222994039986286`*^9, 3.722299448622542*^9}, 
+   3.7222995104732604`*^9, 3.7222995574144983`*^9, {3.722299626035492*^9, 
+   3.7222996586153307`*^9}, 3.7222996977959175`*^9, {3.7222997335716505`*^9, 
+   3.722299755738329*^9}, 3.722299825997089*^9, {3.7222999079616704`*^9, 
+   3.72229994235227*^9}, {3.722299978514817*^9, 3.7222999956728754`*^9}, {
+   3.7223000554883776`*^9, 3.7223000653828783`*^9}, 3.7223001503995733`*^9, {
+   3.722300244786028*^9, 3.722300255015355*^9}, {3.7223003892154226`*^9, 
+   3.722300417263607*^9}, {3.7223004770154686`*^9, 3.7223005430050135`*^9}, 
+   3.722300593613738*^9, 3.722300687114688*^9, 3.7223007207808647`*^9, {
+   3.722300818828123*^9, 3.722300891379219*^9}, 3.722300958483755*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.011000000000000001`], 
+    AbsoluteThickness[1.6], {
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.011000000000000001`], AbsoluteThickness[1.6], Opacity[0.2], LineBox[{},
+       VertexColors->None]}, 
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.011000000000000001`], AbsoluteThickness[1.6], Opacity[0.2], 
+      LineBox[{{{0., 7.71582959108921}, {0., 0}}, {{1., 10.74965528504252}, {
+         1., 0}}, {{2., 13.745290479640069`}, {2., 0}}, {{3., 
+         16.700978229953574`}, {3., 0}}, {{4., 19.614792082337292`}, {
+         4., 0}}, {{5., 22.484610290316617`}, {5., 0}}, {{6., 
+         25.308084519486922`}, {6., 0}}, {{7., 28.08260148521547}, {
+         7., 0}}, {{8., 30.805235407749283`}, {8., 0}}, {{9., 
+         33.47268836063924}, {9., 0}}, {{10., 36.08121439421643}, {
+         10., 0}}, {{11., 38.62652151068225}, {11., 0}}, {{12., 
+         41.103642765401915`}, {12., 0}}, {{13., 43.50676328657773}, {
+         13., 0}}, {{14., 45.82898258131165}, {14., 0}}, {{15., 
+         48.0619786917038}, {15., 0}}, {{16., 50.19551760007403}, {
+         16., 0}}, {{17., 52.21670689914396}, {17., 0}}, {{18., 
+         54.108801501834435`}, {18., 0}}, {{19., 55.84916419132868}, {
+         19., 0}}, {{20., 57.40546669209597}, {20., 0}}, {{21., 
+         58.72768598682989}, {21., 0}}, {{22., 59.72768598682989}, {
+         22., 0}}, {{23., 60.20480724154955}, {23., 0}}},
+       VertexColors->None]}}}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.011000000000000001`], 
+    AbsoluteThickness[1.6], {}, PointBox[CompressedData["
+1:eJxTTMoPSmViYGCQAGIQDQPPP63JY7or5wDhfbD/zu958VK9KpTP4MCitmPb
+tFptKJ/D4fRtHf/izQZQvoBDZVU/c/JcYyhfxIHNvCWbv8YMypdwWD6zfcE9
+P0soX8bh18yvcaqiNlC+goPn3dgXyufsoHwlhzlCsbyNexygfBWHB/3brVO5
+nKB8NYcy/+jbhgHOUL6Gg9L7di2XXhcoX8tBMrR/3t0DrlC+jsO36y8lZV65
+Qfl6DmFfP716x+4B5Rs4KPA17mCT9ITyDR04gqx490p7QflGDlaCaqZveb2h
+fGOHooj2zI1vYHwTh02iyqHPNvtA+aYO/TNqL6jE+kL5ZhD+XRjf3MHaYpW8
+uZSfAwBGfls+
+     "]], {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesOrigin->{0, 0},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "MessagesHead" -> DiscretePlot, "AxisPadding" -> Scaled[0.02], 
+    "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "DefaultPlotStyle" -> {
+      Directive[
+       RGBColor[0.368417, 0.506779, 0.709798], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.880722, 0.611041, 0.142051], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.560181, 0.691569, 0.194885], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.922526, 0.385626, 0.209179], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.528488, 0.470624, 0.701351], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.772079, 0.431554, 0.102387], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.363898, 0.618501, 0.782349], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[1, 0.75, 0], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.647624, 0.37816, 0.614037], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.571589, 0.586483, 0.], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.915, 0.3325, 0.2125], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.40082222609352647`, 0.5220066643438841, 0.85], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.9728288904374106, 0.621644452187053, 0.07336199581899142], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.736782672705901, 0.358, 0.5030266573755369], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.28026441037696703`, 0.715, 0.4292089322474965], 
+       AbsoluteThickness[1.6]]}, "DomainPadding" -> Scaled[0.02], 
+    "PointSizeFunction" -> "SmallPointSize", "RangePadding" -> Scaled[0.05]},
+  PlotRange->{{0, 23}, {0, 60.20480724154955}},
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.02]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.7222993251258936`*^9, {3.7222994039986286`*^9, 3.722299448622542*^9}, 
+   3.7222995104732604`*^9, 3.7222995574144983`*^9, {3.722299626035492*^9, 
+   3.7222996586153307`*^9}, 3.7222996977959175`*^9, {3.7222997335716505`*^9, 
+   3.722299755738329*^9}, 3.722299825997089*^9, {3.7222999079616704`*^9, 
+   3.72229994235227*^9}, {3.722299978514817*^9, 3.7222999956728754`*^9}, {
+   3.7223000554883776`*^9, 3.7223000653828783`*^9}, 3.7223001503995733`*^9, {
+   3.722300244786028*^9, 3.722300255015355*^9}, {3.7223003892154226`*^9, 
+   3.722300417263607*^9}, {3.7223004770154686`*^9, 3.7223005430050135`*^9}, 
+   3.722300593613738*^9, 3.722300687114688*^9, 3.7223007207808647`*^9, {
+   3.722300818828123*^9, 3.722300891379219*^9}, 3.7223009585062895`*^9}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 0 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"5.2\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"7\"\>"]}],
+         5.19792*^7,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 1 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"5.6\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"10\"\>"]}],
+         5.61895152*^10,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 2 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"5.6\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"13\"\>"]}],
+         5.5627620048*^13,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 3 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"5.\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"16\"\>"]}],
+         5.0231740903344*^16,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 4 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"4.1\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"19\"\>"]}],
+         4.119002754074208*^19,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 5 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"3.1\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"22\"\>"]}],
+         3.0521810407689883`*^22,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 6 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"2.\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"25\"\>"]}],
+         2.032752573152146*^25,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 7 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"1.2\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"28\"\>"]}],
+         1.209487781025527*^28,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 8 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"6.4\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"30\"\>"]}],
+         6.386095483814782*^30,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 9 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"3.\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"33\"\>"]}],
+         2.9695343999738735`*^33,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 10 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"1.2\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"36\"\>"]}],
+         1.2056309663893927`*^36,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 11 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"4.2\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"38\"\>"]}],
+         4.2317646920267685`*^38,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 12 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"1.3\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"41\"\>"]}],
+         1.2695294076080306`*^41,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 13 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"3.2\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"43\"\>"]}],
+         3.211909401248317*^43,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 14 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"6.7\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"45\"\>"]}],
+         6.745009742621467*^45,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 15 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"1.2\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"48\"\>"]}],
+         1.1533966659882707`*^48,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 16 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"1.6\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"50\"\>"]}],
+         1.5686194657440482`*^50,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 17 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"1.6\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"52\"\>"]}],
+         1.6470504390312505`*^52,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 18 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"1.3\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"54\"\>"]}],
+         1.2846993424443755`*^54,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 19 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"7.1\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"55\"\>"]}],
+         7.065846383444065*^55,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 20 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"2.5\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"57\"\>"]}],
+         2.5437046980398633`*^57,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 21 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"5.3\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"58\"\>"]}],
+         5.341779865883713*^58,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 22 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"5.3\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"59\"\>"]}],
+         5.3417798658837135`*^59,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"n = 23 ->\"\>", ",", 
+       TagBox[
+        InterpretationBox[
+         RowBox[{"\<\"1.6\"\>", "\[Times]", 
+          SuperscriptBox["10", "\<\"60\"\>"]}],
+         1.602533959765114*^60,
+         AutoDelete->True],
+        ScientificForm[#, 2]& ]}], "}"}]}
+   },
+   DefaultBaseStyle->"Column",
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Column"]], "Output",
+ CellChangeTimes->{
+  3.7222993251258936`*^9, {3.7222994039986286`*^9, 3.722299448622542*^9}, 
+   3.7222995104732604`*^9, 3.7222995574144983`*^9, {3.722299626035492*^9, 
+   3.7222996586153307`*^9}, 3.7222996977959175`*^9, {3.7222997335716505`*^9, 
+   3.722299755738329*^9}, 3.722299825997089*^9, {3.7222999079616704`*^9, 
+   3.72229994235227*^9}, {3.722299978514817*^9, 3.7222999956728754`*^9}, {
+   3.7223000554883776`*^9, 3.7223000653828783`*^9}, 3.7223001503995733`*^9, {
+   3.722300244786028*^9, 3.722300255015355*^9}, {3.7223003892154226`*^9, 
+   3.722300417263607*^9}, {3.7223004770154686`*^9, 3.7223005430050135`*^9}, 
+   3.722300593613738*^9, 3.722300687114688*^9, 3.7223007207808647`*^9, {
+   3.722300818828123*^9, 3.722300891379219*^9}, 3.7223009585153027`*^9}]
+}, Open  ]]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2023, 50, 112, "Input"],
+Cell[2606, 74, 846, 11, 31, "Output"],
+Cell[3455, 87, 5081, 109, 246, "Output"],
+Cell[8539, 198, 8264, 257, 488, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
