@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     52178,       1078]
-NotebookOptionsPosition[     51570,       1054]
-NotebookOutlinePosition[     51912,       1069]
-CellTagsIndexPosition[     51869,       1066]
+NotebookDataLength[     52628,       1091]
+NotebookOptionsPosition[     52019,       1067]
+NotebookOutlinePosition[     52361,       1082]
+CellTagsIndexPosition[     52318,       1079]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -37,14 +37,15 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"X", "=", 
    RowBox[{"{", 
-    RowBox[{
-     RowBox[{"c", " ", "t"}], ",", 
+    RowBox[{"t", ",", 
      RowBox[{"r", "[", "t", "]"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"g", "=", 
    RowBox[{"(", "\[NoBreak]", GridBox[{
       {
-       RowBox[{"-", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"c", "^", "2"}]}], " ", 
         RowBox[{"(", 
          RowBox[{"1", "-", 
           RowBox[{"rs", "/", 
@@ -246,7 +247,8 @@ Schwarzschild Metric - Standard Coords:\>\"", "\[IndentingNewLine]",
    3.6840125077207093`*^9, 3.684012514003852*^9}, {3.684090019450961*^9, 
    3.6840900211466155`*^9}, {3.6855267759102693`*^9, 3.6855267970575137`*^9}, 
    3.6855269839302206`*^9, 3.6917034260621643`*^9, {3.716416717543171*^9, 
-   3.7164167509447384`*^9}, {3.7274719580294604`*^9, 3.7274720045275373`*^9}}],
+   3.7164167509447384`*^9}, {3.7274719580294604`*^9, 
+   3.7274720045275373`*^9}, {3.850061507788638*^9, 3.8500615125698853`*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -501,7 +503,8 @@ RLX7I1fjROigCB0tVT4XJ20zHhUh26b6usG2RYopWsg+9FMpfToql8/difv3
    3.683408005974511*^9, {3.684012489835764*^9, 3.684012514660141*^9}, 
    3.6840900255731*^9, 3.6855243038633876`*^9, 3.685526657827995*^9, {
    3.6855267776927414`*^9, 3.685526800573951*^9}, 3.6917035423132677`*^9, 
-   3.716416689370281*^9, 3.716416760385083*^9, 3.7274720282199926`*^9}],
+   3.716416689370281*^9, 3.716416760385083*^9, 3.7274720282199926`*^9, 
+   3.850061536567298*^9}],
 
 Cell[BoxData["\<\"Radial Geodesic in Schwarzschild Metric - Standard \
 Coords:\"\>"], "Output",
@@ -539,22 +542,23 @@ Coords:\"\>"], "Output",
    3.683408005974511*^9, {3.684012489835764*^9, 3.684012514660141*^9}, 
    3.6840900255731*^9, 3.6855243038633876`*^9, 3.685526657827995*^9, {
    3.6855267776927414`*^9, 3.685526800573951*^9}, 3.6917035423132677`*^9, 
-   3.716416689370281*^9, 3.716416760385083*^9, 3.727472028256068*^9}],
+   3.716416689370281*^9, 3.716416760385083*^9, 3.7274720282199926`*^9, 
+   3.8500615365992136`*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`t$$ = 41.43089050292969, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 54.4}}, Typeset`size$$ = {196., {32., 38.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$1774$$ = 0}, 
+    True, $CellContext`t$2014$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$1774$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$2014$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -621,7 +625,8 @@ Cell[BoxData[
    3.683408005974511*^9, {3.684012489835764*^9, 3.684012514660141*^9}, 
    3.6840900255731*^9, 3.6855243038633876`*^9, 3.685526657827995*^9, {
    3.6855267776927414`*^9, 3.685526800573951*^9}, 3.6917035423132677`*^9, 
-   3.716416689370281*^9, 3.716416760385083*^9, 3.727472028525028*^9}]
+   3.716416689370281*^9, 3.716416760385083*^9, 3.7274720282199926`*^9, 
+   3.8500615370608816`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -650,18 +655,22 @@ Cell[BoxData[{
   RowBox[{"g", "=", 
    RowBox[{"(", "\[NoBreak]", GridBox[{
       {
-       RowBox[{"-", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"c", "^", "2"}]}], " ", 
         RowBox[{"(", 
          RowBox[{"1", "-", 
           RowBox[{"rs", "/", 
            RowBox[{"r2", "[", "T", "]"}]}]}], ")"}]}], 
-       RowBox[{"Sqrt", "[", 
-        RowBox[{"rs", "/", 
-         RowBox[{"r2", "[", "T", "]"}]}], "]"}]},
+       RowBox[{"c", " ", 
+        RowBox[{"Sqrt", "[", 
+         RowBox[{"rs", "/", 
+          RowBox[{"r2", "[", "T", "]"}]}], "]"}]}]},
       {
-       RowBox[{"Sqrt", "[", 
-        RowBox[{"rs", "/", 
-         RowBox[{"r2", "[", "T", "]"}]}], "]"}], "1"}
+       RowBox[{"c", " ", 
+        RowBox[{"Sqrt", "[", 
+         RowBox[{"rs", "/", 
+          RowBox[{"r2", "[", "T", "]"}]}], "]"}]}], "1"}
      }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"\[ScriptCapitalL]2", "=", 
@@ -775,7 +784,8 @@ Schwarzschild Metric - Gullstrand-Painlev\[EAcute] Coords:\>\"", "\
    RowBox[{"RefreshRate", "\[Rule]", "120"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.6917034369006014`*^9, 3.691703478764101*^9}, {
   3.6917035123001757`*^9, 3.691703595564601*^9}, {3.716416726201404*^9, 
-  3.7164167582049065`*^9}, {3.7274720071909957`*^9, 3.7274720246155252`*^9}}],
+  3.7164167582049065`*^9}, {3.7274720071909957`*^9, 3.7274720246155252`*^9}, {
+  3.850061521713385*^9, 3.850061531905753*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -995,27 +1005,29 @@ YPzWZRWNJECJX1LrnJyMHX1g4mKqAMWJm0djDumFniZlWbTHArRpFN9Yuf4j
      SelectWithContents->True,
      Selectable->False]}], "}"}], "}"}]], "Output",
  CellChangeTimes->{{3.6917035538159275`*^9, 3.691703596864195*^9}, 
-   3.7164167022823677`*^9, 3.716416758678805*^9, 3.727472030368311*^9}],
+   3.7164167022823677`*^9, 3.716416758678805*^9, 3.727472030368311*^9, 
+   3.850061539879959*^9}],
 
 Cell[BoxData["\<\"Radial Geodesic in Schwarzschild Metric - \
 Gullstrand-Painlev\[EAcute] Coords:\"\>"], "Output",
  CellChangeTimes->{{3.6917035538159275`*^9, 3.691703596864195*^9}, 
-   3.7164167022823677`*^9, 3.716416758678805*^9, 3.7274720303788424`*^9}],
+   3.7164167022823677`*^9, 3.716416758678805*^9, 3.727472030368311*^9, 
+   3.850061539896908*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`T$$ = 0., Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`T$$ = 1.4230502128601064`, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`T$$], 0, 26.8}}, Typeset`size$$ = {196., {32., 38.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`T$1926$$ = 0}, 
+    True, $CellContext`T$2167$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`T$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`T$$, $CellContext`T$1926$$, 0]}, 
+        Hold[$CellContext`T$$, $CellContext`T$2167$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1049,7 +1061,8 @@ Cell[BoxData[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{{3.6917035538159275`*^9, 3.691703596864195*^9}, 
-   3.7164167022823677`*^9, 3.716416758678805*^9, 3.7274720303983974`*^9}]
+   3.7164167022823677`*^9, 3.716416758678805*^9, 3.727472030368311*^9, 
+   3.8500615399197464`*^9}]
 }, Open  ]]
 },
 WindowSize->{1920, 997},
@@ -1069,16 +1082,16 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 10804, 226, 390, "Input"],
-Cell[11387, 250, 13830, 253, 76, "Output"],
-Cell[25220, 505, 2606, 36, 31, "Output"],
-Cell[27829, 543, 4692, 80, 165, "Output"]
+Cell[580, 22, 10889, 228, 390, "Input"],
+Cell[11472, 252, 13856, 254, 76, "Output"],
+Cell[25331, 508, 2636, 37, 31, "Output"],
+Cell[27970, 547, 4737, 81, 165, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32558, 628, 5023, 149, 390, "Input"],
-Cell[37584, 779, 11382, 218, 76, "Output"],
-Cell[48969, 999, 256, 3, 31, "Output"],
-Cell[49228, 1004, 2326, 47, 165, "Output"]
+Cell[32744, 633, 5193, 154, 390, "Input"],
+Cell[37940, 789, 11408, 219, 76, "Output"],
+Cell[49351, 1010, 280, 4, 31, "Output"],
+Cell[49634, 1016, 2369, 48, 165, "Output"]
 }, Open  ]]
 }
 ]

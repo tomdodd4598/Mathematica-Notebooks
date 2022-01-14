@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     58353,       1085]
-NotebookOptionsPosition[     57948,       1067]
-NotebookOutlinePosition[     58290,       1082]
-CellTagsIndexPosition[     58247,       1079]
+NotebookDataLength[     58759,       1090]
+NotebookOptionsPosition[     58354,       1072]
+NotebookOutlinePosition[     58696,       1087]
+CellTagsIndexPosition[     58653,       1084]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,16 +22,19 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
+  RowBox[{"c", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"n", "=", "16"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"m", "=", "1"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"g", "=", " ", 
+  RowBox[{"g", "=", 
    TagBox[
     TagBox[
      RowBox[{"(", "\[NoBreak]", GridBox[{
         {
-         RowBox[{"-", "1"}], "0", "0"},
+         RowBox[{"-", 
+          RowBox[{"c", "^", "2"}]}], "0", "0"},
         {"0", "1", "0"},
         {"0", "0", 
          RowBox[{
@@ -63,7 +66,7 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"\[ScriptCapitalL]", "=", 
    RowBox[{
-    RowBox[{"-", "m"}], " ", 
+    RowBox[{"-", "m"}], " ", "c", " ", 
     RowBox[{"Sqrt", "[", 
      RowBox[{"-", 
       RowBox[{"Sum", "[", 
@@ -415,7 +418,9 @@ Wormhole Metric:\>\"", "\[IndentingNewLine]",
    3.80496310257206*^9, 3.804963304905922*^9}, {3.8049648688364763`*^9, 
    3.804964932147704*^9}, {3.8049651907144723`*^9, 3.8049652088021355`*^9}, {
    3.8049653856565557`*^9, 3.8049653927127666`*^9}, {3.8049715869533052`*^9, 
-   3.804971593976081*^9}}],
+   3.804971593976081*^9}, {3.849698729533523*^9, 3.8496987306575885`*^9}, {
+   3.850060049859909*^9, 3.8500600593729486`*^9}, {3.8500606954027395`*^9, 
+   3.8500607193923416`*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -465,11 +470,11 @@ P8rQ7oJyQDnhtVt3/xXA9wuZ4mcQc0AK0C5LKEsawPsMiGyClHNAWMTArE2k
 HsC3sXAGBhZ0QLL0MiR9niHAkNcF4IGidEDV+MdTjk0kwG4yuzGfJXVAC/Ig
 /3v8JsBpDh3DtLN1QMGkm+gTFSrAHI54ZDM/dkDEzgHBOk0twNVC9H1TwXZA
 EOk7Qfk5MMCreBzXa053QN+HonoRAjLAhuNkqCXSd0CmNwWHm7szwBnypolI
-U3hADgNWeYJ5NcDJgZWqY994QJ62NikcajfAfkakQyBieUABSGiWAkQ5wFCM
-XxzV73lAHh7EcJpPO8DadRQF83p6QNxmK4xTWj3AapTpZbL8ekCbh7KxkUg/
-wBc0awZqiXtAcu4x2XqzQMDJCA0fwwx8QBDU6k44s0HAmF5bdxSbfED0JGK2
-yMpCwB9Yo9/OJn1ApOReGXDfQ8CrhgvAKql9QH8xdVI+40TAVDYg4H42fkDo
-7PAJi/5FwAMbVXh0un5Aw10mf2oIR8COHx33/z9/QDYAib+pFkjApDu8Bw==
+U3hADwNWeYJ5NcDJgZWqY994QJ62NikcajfAfkakQyBieUACSGiWAkQ5wFCM
+XxzV73lAHx7EcJpPO8DadRQF83p6QOBmK4xTWj3AapTpZbL8ekCch7KxkUg/
+wBc0awZqiXtAdO4x2XqzQMDJCA0fwwx8QBXU6k44s0HAmF5bdxSbfED3JGK2
+yMpCwB9Yo9/OJn1AqOReGXDfQ8CrhgvAKql9QIUxdVI+40TAVDYg4H42fkDv
+7PAJi/5FwAMbVXh0un5AyV0mf2oIR8COHx33/z9/QDsAib+pFkjAsZu8NQ==
 
                     "]]}}}, {
                    DisplayFunction -> Identity, AspectRatio -> 1, 
@@ -490,7 +495,7 @@ yMpCwB9Yo9/OJn1ApOReGXDfQ8CrhgvAKql9QH8xdVI+40TAVDYg4H42fkDo
                     Method -> {
                     "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
                     AbsolutePointSize[6], "ScalingFunctions" -> None}, 
-                    PlotRange -> {{0., 500.}, {-48.17705530347341, 
+                    PlotRange -> {{0., 500.}, {-48.177055303473445`, 
                     41.99999788135594}}, PlotRangeClipping -> True, 
                     PlotRangePadding -> {{
                     Scaled[0.1], 
@@ -558,11 +563,11 @@ P8rQ7oJyQDnhtVt3/xXA9wuZ4mcQc0AK0C5LKEsawPsMiGyClHNAWMTArE2k
 HsC3sXAGBhZ0QLL0MiR9niHAkNcF4IGidEDV+MdTjk0kwG4yuzGfJXVAC/Ig
 /3v8JsBpDh3DtLN1QMGkm+gTFSrAHI54ZDM/dkDEzgHBOk0twNVC9H1TwXZA
 EOk7Qfk5MMCreBzXa053QN+HonoRAjLAhuNkqCXSd0CmNwWHm7szwBnypolI
-U3hADgNWeYJ5NcDJgZWqY994QJ62NikcajfAfkakQyBieUABSGiWAkQ5wFCM
-XxzV73lAHh7EcJpPO8DadRQF83p6QNxmK4xTWj3AapTpZbL8ekCbh7KxkUg/
-wBc0awZqiXtAcu4x2XqzQMDJCA0fwwx8QBDU6k44s0HAmF5bdxSbfED0JGK2
-yMpCwB9Yo9/OJn1ApOReGXDfQ8CrhgvAKql9QH8xdVI+40TAVDYg4H42fkDo
-7PAJi/5FwAMbVXh0un5Aw10mf2oIR8COHx33/z9/QDYAib+pFkjApDu8Bw==
+U3hADwNWeYJ5NcDJgZWqY994QJ62NikcajfAfkakQyBieUACSGiWAkQ5wFCM
+XxzV73lAHx7EcJpPO8DadRQF83p6QOBmK4xTWj3AapTpZbL8ekCch7KxkUg/
+wBc0awZqiXtAdO4x2XqzQMDJCA0fwwx8QBXU6k44s0HAmF5bdxSbfED3JGK2
+yMpCwB9Yo9/OJn1AqOReGXDfQ8CrhgvAKql9QIUxdVI+40TAVDYg4H42fkDv
+7PAJi/5FwAMbVXh0un5AyV0mf2oIR8COHx33/z9/QDsAib+pFkjAsZu8NQ==
 
                     "]]}}}, {
                    DisplayFunction -> Identity, AspectRatio -> 1, 
@@ -583,7 +588,7 @@ yMpCwB9Yo9/OJn1ApOReGXDfQ8CrhgvAKql9QH8xdVI+40TAVDYg4H42fkDo
                     Method -> {
                     "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
                     AbsolutePointSize[6], "ScalingFunctions" -> None}, 
-                    PlotRange -> {{0., 500.}, {-48.17705530347341, 
+                    PlotRange -> {{0., 500.}, {-48.177055303473445`, 
                     41.99999788135594}}, PlotRangeClipping -> True, 
                     PlotRangePadding -> {{
                     Scaled[0.1], 
@@ -685,9 +690,9 @@ Ucc3DEBpDh3DtLN1QPTlfyOq7AxAHI54ZDM/dkAj4J8/6Y0NQNVC9H1TwXZA
 4BIkbiEWDkCreBzXa053QFgZSIcnmw5AhuNkqCXSd0DUzBZliAoPQBnypolI
 U3hAnEcdnL1sD0DJgZWqY994QMkrIJEwzA9AfkakQyBieUD0+puy9w0QQFCM
 XxzV73lAVrfVTLA0EEDadRQF83p6QIwzYxqxVhBAapTpZbL8ekDwGRzWQXMQ
-QBc0awZqiXtAKPTQlDiPEEDJCA0fwwx8QLVvWR/UphBAmF5bdxSbfECMVwpY
-Bb4QQB9Yo9/OJn1AMrbRjKrSEECrhgvAKql9QMwR29lA5BBAVDYg4H42fkBd
-AuPEtPUQQAMbVXh0un5AJcg/lacEEUCOHx33/z9/QC4/toWaEhFAURKxyw==
+QBc0awZqiXtAKPTQlDiPEEDJCA0fwwx8QLVvWR/UphBAmF5bdxSbfECNVwpY
+Bb4QQB9Yo9/OJn1AMrbRjKrSEECrhgvAKql9QM0R29lA5BBAVDYg4H42fkBd
+AuPEtPUQQAMbVXh0un5AJcg/lacEEUCOHx33/z9/QC8/toWaEhFAUaqxzg==
 
                     "]]}}}, {
                    DisplayFunction -> Identity, AspectRatio -> 1, 
@@ -708,7 +713,7 @@ AuPEtPUQQAMbVXh0un5AJcg/lacEEUCOHx33/z9/QC4/toWaEhFAURKxyw==
                     Method -> {
                     "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
                     AbsolutePointSize[6], "ScalingFunctions" -> None}, 
-                    PlotRange -> {{0., 500.}, {0., 4.268167580841505}}, 
+                    PlotRange -> {{0., 500.}, {0., 4.268167580841506}}, 
                     PlotRangeClipping -> True, PlotRangePadding -> {{
                     Scaled[0.1], 
                     Scaled[0.1]}, {
@@ -777,9 +782,9 @@ Ucc3DEBpDh3DtLN1QPTlfyOq7AxAHI54ZDM/dkAj4J8/6Y0NQNVC9H1TwXZA
 4BIkbiEWDkCreBzXa053QFgZSIcnmw5AhuNkqCXSd0DUzBZliAoPQBnypolI
 U3hAnEcdnL1sD0DJgZWqY994QMkrIJEwzA9AfkakQyBieUD0+puy9w0QQFCM
 XxzV73lAVrfVTLA0EEDadRQF83p6QIwzYxqxVhBAapTpZbL8ekDwGRzWQXMQ
-QBc0awZqiXtAKPTQlDiPEEDJCA0fwwx8QLVvWR/UphBAmF5bdxSbfECMVwpY
-Bb4QQB9Yo9/OJn1AMrbRjKrSEECrhgvAKql9QMwR29lA5BBAVDYg4H42fkBd
-AuPEtPUQQAMbVXh0un5AJcg/lacEEUCOHx33/z9/QC4/toWaEhFAURKxyw==
+QBc0awZqiXtAKPTQlDiPEEDJCA0fwwx8QLVvWR/UphBAmF5bdxSbfECNVwpY
+Bb4QQB9Yo9/OJn1AMrbRjKrSEECrhgvAKql9QM0R29lA5BBAVDYg4H42fkBd
+AuPEtPUQQAMbVXh0un5AJcg/lacEEUCOHx33/z9/QC8/toWaEhFAUaqxzg==
 
                     "]]}}}, {
                    DisplayFunction -> Identity, AspectRatio -> 1, 
@@ -800,7 +805,7 @@ AuPEtPUQQAMbVXh0un5AJcg/lacEEUCOHx33/z9/QC4/toWaEhFAURKxyw==
                     Method -> {
                     "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
                     AbsolutePointSize[6], "ScalingFunctions" -> None}, 
-                    PlotRange -> {{0., 500.}, {0., 4.268167580841505}}, 
+                    PlotRange -> {{0., 500.}, {0., 4.268167580841506}}, 
                     PlotRangeClipping -> True, PlotRangePadding -> {{
                     Scaled[0.1], 
                     Scaled[0.1]}, {
@@ -902,7 +907,7 @@ AuPEtPUQQAMbVXh0un5AJcg/lacEEUCOHx33/z9/QC4/toWaEhFAURKxyw==
    3.8049632445889325`*^9}, {3.804963274921218*^9, 3.804963305757738*^9}, {
    3.804964869698394*^9, 3.8049649328190746`*^9}, {3.8049651913747945`*^9, 
    3.8049652092197075`*^9}, 3.8049653935705304`*^9, 3.8049715955354757`*^9, 
-   3.8049716553789067`*^9}],
+   3.8049716553789067`*^9, 3.8500600672339015`*^9, 3.8500607471120853`*^9}],
 
 Cell[BoxData["\<\"Geodesic in Ellis Wormhole Metric:\"\>"], "Output",
  CellChangeTimes->{{3.683897481876359*^9, 3.6838975036093264`*^9}, 
@@ -952,7 +957,7 @@ Cell[BoxData["\<\"Geodesic in Ellis Wormhole Metric:\"\>"], "Output",
    3.8049632445889325`*^9}, {3.804963274921218*^9, 3.804963305757738*^9}, {
    3.804964869698394*^9, 3.8049649328190746`*^9}, {3.8049651913747945`*^9, 
    3.8049652092197075`*^9}, 3.8049653935705304`*^9, 3.8049715955354757`*^9, 
-   3.804971655405878*^9}],
+   3.8049716553789067`*^9, 3.8500600672339015`*^9, 3.8500607471459494`*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -963,11 +968,11 @@ Cell[BoxData[
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0.001, 500}}, Typeset`size$$ = {
     196., {84., 89.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$894239$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$50831$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0.001}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$894239$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$50831$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1062,7 +1067,7 @@ Cell[BoxData[
    3.8049632445889325`*^9}, {3.804963274921218*^9, 3.804963305757738*^9}, {
    3.804964869698394*^9, 3.8049649328190746`*^9}, {3.8049651913747945`*^9, 
    3.8049652092197075`*^9}, 3.8049653935705304`*^9, 3.8049715955354757`*^9, 
-   3.804971655433851*^9}]
+   3.8049716553789067`*^9, 3.8500600672339015`*^9, 3.850060747174076*^9}]
 }, Open  ]]
 },
 WindowSize->{1920, 997},
@@ -1082,10 +1087,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 20988, 395, 366, "Input"],
-Cell[21571, 419, 26266, 485, 76, "Output"],
-Cell[47840, 906, 3599, 48, 31, "Output"],
-Cell[51442, 956, 6490, 108, 269, "Output"]
+Cell[580, 22, 21246, 400, 386, "Input"],
+Cell[21829, 424, 26318, 485, 76, "Output"],
+Cell[48150, 911, 3649, 48, 31, "Output"],
+Cell[51802, 961, 6536, 108, 269, "Output"]
 }, Open  ]]
 }
 ]

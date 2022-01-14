@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     44630,       1115]
-NotebookOptionsPosition[     44053,       1093]
-NotebookOutlinePosition[     44395,       1108]
-CellTagsIndexPosition[     44352,       1105]
+NotebookDataLength[     46553,       1153]
+NotebookOptionsPosition[     45974,       1131]
+NotebookOutlinePosition[     46316,       1146]
+CellTagsIndexPosition[     46273,       1143]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,7 +27,24 @@ Cell[BoxData[{
     RowBox[{"t", ",", "x", ",", "y", ",", "z"}], "}"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"\[CapitalLambda]", "=", 
+  RowBox[{"\[GothicCapitalM]", "=", 
+   RowBox[{"{", 
+    RowBox[{"c", ",", "1", ",", "1", ",", "1"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[GothicCapitalD]", "[", 
+    RowBox[{"f_", ",", "\[ScriptU]_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"D", "[", 
+     RowBox[{"f", ",", 
+      RowBox[{"X", "[", 
+       RowBox[{"[", "\[ScriptU]", "]"}], "]"}]}], "]"}], "/", 
+    RowBox[{"\[GothicCapitalM]", "[", 
+     RowBox[{"[", "\[ScriptU]", "]"}], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Lambda]", "=", 
    RowBox[{"1", "/", 
     RowBox[{"(", 
      RowBox[{"2", 
@@ -91,97 +108,100 @@ Cell[BoxData[{
          RowBox[{
           RowBox[{"invg", "[", 
            RowBox[{"[", 
-            RowBox[{"u", ",", "v"}], "]"}], "]"}], 
+            RowBox[{"\[ScriptU]", ",", "\[ScriptV]"}], "]"}], "]"}], 
           RowBox[{"(", 
            RowBox[{
-            RowBox[{"D", "[", 
+            RowBox[{"\[GothicCapitalD]", "[", 
              RowBox[{
               RowBox[{"g", "[", 
                RowBox[{"[", 
-                RowBox[{"c", ",", "v"}], "]"}], "]"}], ",", 
-              RowBox[{"X", "[", 
-               RowBox[{"[", "b", "]"}], "]"}]}], "]"}], "+", 
-            RowBox[{"D", "[", 
+                RowBox[{"\[ScriptB]", ",", "\[ScriptV]"}], "]"}], "]"}], ",", 
+              "\[ScriptA]"}], "]"}], "+", 
+            RowBox[{"\[GothicCapitalD]", "[", 
              RowBox[{
               RowBox[{"g", "[", 
                RowBox[{"[", 
-                RowBox[{"b", ",", "v"}], "]"}], "]"}], ",", 
-              RowBox[{"X", "[", 
-               RowBox[{"[", "c", "]"}], "]"}]}], "]"}], "-", 
-            RowBox[{"D", "[", 
+                RowBox[{"\[ScriptA]", ",", "\[ScriptV]"}], "]"}], "]"}], ",", 
+              "\[ScriptB]"}], "]"}], "-", 
+            RowBox[{"\[GothicCapitalD]", "[", 
              RowBox[{
               RowBox[{"g", "[", 
                RowBox[{"[", 
-                RowBox[{"b", ",", "c"}], "]"}], "]"}], ",", 
-              RowBox[{"X", "[", 
-               RowBox[{"[", "v", "]"}], "]"}]}], "]"}]}], ")"}]}], ",", 
+                RowBox[{"\[ScriptA]", ",", "\[ScriptB]"}], "]"}], "]"}], ",", 
+              "\[ScriptV]"}], "]"}]}], ")"}]}], ",", 
          RowBox[{"{", 
-          RowBox[{"v", ",", "d"}], "}"}]}], "]"}], "/", "2"}], "]"}], ",", 
+          RowBox[{"\[ScriptV]", ",", "d"}], "}"}]}], "]"}], "/", "2"}], "]"}],
+      ",", 
      RowBox[{"{", 
-      RowBox[{"u", ",", "d"}], "}"}], ",", 
+      RowBox[{"\[ScriptU]", ",", "d"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"b", ",", "d"}], "}"}], ",", 
+      RowBox[{"\[ScriptA]", ",", "d"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"c", ",", "d"}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      RowBox[{"\[ScriptB]", ",", "d"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"\"\<Christoffel Symbols =\>\"", 
   RowBox[{"MatrixForm", "[", 
    RowBox[{"Table", "[", 
     RowBox[{
      RowBox[{"MatrixForm", "[", 
       RowBox[{"\[CapitalGamma]", "[", 
-       RowBox[{"[", "u", "]"}], "]"}], "]"}], ",", 
+       RowBox[{"[", "\[ScriptU]", "]"}], "]"}], "]"}], ",", 
      RowBox[{"{", 
-      RowBox[{"u", ",", "d"}], "}"}]}], "]"}], "]"}]}], "\[IndentingNewLine]", 
+      RowBox[{"\[ScriptU]", ",", "d"}], "}"}]}], "]"}], 
+   "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"\[ScriptCapitalR]", "=", 
    RowBox[{"Table", "[", 
     RowBox[{
      RowBox[{"Simplify", "[", 
       RowBox[{
-       RowBox[{"D", "[", 
+       RowBox[{"\[GothicCapitalD]", "[", 
         RowBox[{
          RowBox[{"\[CapitalGamma]", "[", 
           RowBox[{"[", 
-           RowBox[{"u", ",", "v", ",", "p"}], "]"}], "]"}], ",", 
-         RowBox[{"X", "[", 
-          RowBox[{"[", "s", "]"}], "]"}]}], "]"}], "-", 
-       RowBox[{"D", "[", 
+           RowBox[{"\[ScriptU]", ",", "\[ScriptV]", ",", "\[ScriptP]"}], 
+           "]"}], "]"}], ",", "\[ScriptS]"}], "]"}], "-", 
+       RowBox[{"\[GothicCapitalD]", "[", 
         RowBox[{
          RowBox[{"\[CapitalGamma]", "[", 
           RowBox[{"[", 
-           RowBox[{"u", ",", "v", ",", "s"}], "]"}], "]"}], ",", 
-         RowBox[{"X", "[", 
-          RowBox[{"[", "p", "]"}], "]"}]}], "]"}], "+", 
+           RowBox[{"\[ScriptU]", ",", "\[ScriptV]", ",", "\[ScriptS]"}], 
+           "]"}], "]"}], ",", "\[ScriptP]"}], "]"}], "+", 
        RowBox[{"Sum", "[", 
         RowBox[{
          RowBox[{
           RowBox[{"\[CapitalGamma]", "[", 
            RowBox[{"[", 
-            RowBox[{"u", ",", "s", ",", "l"}], "]"}], "]"}], 
+            RowBox[{"\[ScriptU]", ",", "\[ScriptS]", ",", "\[ScriptL]"}], 
+            "]"}], "]"}], 
           RowBox[{"\[CapitalGamma]", "[", 
            RowBox[{"[", 
-            RowBox[{"l", ",", "v", ",", "p"}], "]"}], "]"}]}], ",", 
+            RowBox[{"\[ScriptL]", ",", "\[ScriptV]", ",", "\[ScriptP]"}], 
+            "]"}], "]"}]}], ",", 
          RowBox[{"{", 
-          RowBox[{"l", ",", "d"}], "}"}]}], "]"}], "-", 
+          RowBox[{"\[ScriptL]", ",", "d"}], "}"}]}], "]"}], "-", 
        RowBox[{"Sum", "[", 
         RowBox[{
          RowBox[{
           RowBox[{"\[CapitalGamma]", "[", 
            RowBox[{"[", 
-            RowBox[{"u", ",", "p", ",", "l"}], "]"}], "]"}], 
+            RowBox[{"\[ScriptU]", ",", "\[ScriptP]", ",", "\[ScriptL]"}], 
+            "]"}], "]"}], 
           RowBox[{"\[CapitalGamma]", "[", 
            RowBox[{"[", 
-            RowBox[{"l", ",", "v", ",", "s"}], "]"}], "]"}]}], ",", 
+            RowBox[{"\[ScriptL]", ",", "\[ScriptV]", ",", "\[ScriptS]"}], 
+            "]"}], "]"}]}], ",", 
          RowBox[{"{", 
-          RowBox[{"l", ",", "d"}], "}"}]}], "]"}]}], "]"}], ",", 
+          RowBox[{"\[ScriptL]", ",", "d"}], "}"}]}], "]"}]}], "]"}], ",", 
      RowBox[{"{", 
-      RowBox[{"u", ",", "d"}], "}"}], ",", 
+      RowBox[{"\[ScriptU]", ",", "d"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"v", ",", "d"}], "}"}], ",", 
+      RowBox[{"\[ScriptV]", ",", "d"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"s", ",", "d"}], "}"}], ",", 
+      RowBox[{"\[ScriptS]", ",", "d"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"p", ",", "d"}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      RowBox[{"\[ScriptP]", ",", "d"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"\"\<Riemann Tensor =\>\"", 
   RowBox[{
   "MatrixForm", "[", "\[ScriptCapitalR]", "]"}]}], "\[IndentingNewLine]", 
@@ -193,38 +213,42 @@ Cell[BoxData[{
       RowBox[{
        RowBox[{"g", "[", 
         RowBox[{"[", 
-         RowBox[{"u", ",", "l"}], "]"}], "]"}], 
+         RowBox[{"\[ScriptU]", ",", "\[ScriptL]"}], "]"}], "]"}], 
        RowBox[{"invg", "[", 
         RowBox[{"[", 
-         RowBox[{"v", ",", "t"}], "]"}], "]"}], 
+         RowBox[{"\[ScriptV]", ",", "\[ScriptT]"}], "]"}], "]"}], 
        RowBox[{"invg", "[", 
         RowBox[{"[", 
-         RowBox[{"s", ",", "m"}], "]"}], "]"}], 
+         RowBox[{"\[ScriptS]", ",", "\[ScriptM]"}], "]"}], "]"}], 
        RowBox[{"invg", "[", 
         RowBox[{"[", 
-         RowBox[{"p", ",", "n"}], "]"}], "]"}], 
+         RowBox[{"\[ScriptP]", ",", "\[ScriptN]"}], "]"}], "]"}], 
        RowBox[{"\[ScriptCapitalR]", "[", 
         RowBox[{"[", 
-         RowBox[{"u", ",", "v", ",", "s", ",", "p"}], "]"}], "]"}], 
+         RowBox[{
+         "\[ScriptU]", ",", "\[ScriptV]", ",", "\[ScriptS]", ",", 
+          "\[ScriptP]"}], "]"}], "]"}], 
        RowBox[{"\[ScriptCapitalR]", "[", 
         RowBox[{"[", 
-         RowBox[{"l", ",", "t", ",", "m", ",", "n"}], "]"}], "]"}]}], ",", 
+         RowBox[{
+         "\[ScriptL]", ",", "\[ScriptT]", ",", "\[ScriptM]", ",", 
+          "\[ScriptN]"}], "]"}], "]"}]}], ",", 
       RowBox[{"{", 
-       RowBox[{"u", ",", "d"}], "}"}], ",", 
+       RowBox[{"\[ScriptU]", ",", "d"}], "}"}], ",", 
       RowBox[{"{", 
-       RowBox[{"v", ",", "d"}], "}"}], ",", 
+       RowBox[{"\[ScriptV]", ",", "d"}], "}"}], ",", 
       RowBox[{"{", 
-       RowBox[{"s", ",", "d"}], "}"}], ",", 
+       RowBox[{"\[ScriptS]", ",", "d"}], "}"}], ",", 
       RowBox[{"{", 
-       RowBox[{"p", ",", "d"}], "}"}], ",", 
+       RowBox[{"\[ScriptP]", ",", "d"}], "}"}], ",", 
       RowBox[{"{", 
-       RowBox[{"l", ",", "d"}], "}"}], ",", 
+       RowBox[{"\[ScriptL]", ",", "d"}], "}"}], ",", 
       RowBox[{"{", 
-       RowBox[{"t", ",", "d"}], "}"}], ",", 
+       RowBox[{"\[ScriptT]", ",", "d"}], "}"}], ",", 
       RowBox[{"{", 
-       RowBox[{"m", ",", "d"}], "}"}], ",", 
+       RowBox[{"\[ScriptM]", ",", "d"}], "}"}], ",", 
       RowBox[{"{", 
-       RowBox[{"n", ",", "d"}], "}"}]}], "]"}], "]"}]}], 
+       RowBox[{"\[ScriptN]", ",", "d"}], "}"}]}], "]"}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{"\"\<Kretschmann Scalar =\>\"", 
   RowBox[{
@@ -238,34 +262,38 @@ Cell[BoxData[{
        RowBox[{
         RowBox[{"\[ScriptCapitalR]", "[", 
          RowBox[{"[", 
-          RowBox[{"s", ",", "u", ",", "s", ",", "v"}], "]"}], "]"}], ",", 
+          RowBox[{
+          "\[ScriptS]", ",", "\[ScriptU]", ",", "\[ScriptS]", ",", 
+           "\[ScriptV]"}], "]"}], "]"}], ",", 
         RowBox[{"{", 
-         RowBox[{"s", ",", "d"}], "}"}]}], "]"}], "]"}], ",", 
+         RowBox[{"\[ScriptS]", ",", "d"}], "}"}]}], "]"}], "]"}], ",", 
      RowBox[{"{", 
-      RowBox[{"u", ",", "d"}], "}"}], ",", 
+      RowBox[{"\[ScriptU]", ",", "d"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"v", ",", "d"}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      RowBox[{"\[ScriptV]", ",", "d"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"\"\<Ricci Tensor =\>\"", 
   RowBox[{"MatrixForm", "[", "R", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"S", "=", 
+  RowBox[{"\[ScriptCapitalS]", "=", 
    RowBox[{"Simplify", "[", 
     RowBox[{"Sum", "[", 
      RowBox[{
       RowBox[{
        RowBox[{"invg", "[", 
         RowBox[{"[", 
-         RowBox[{"u", ",", "v"}], "]"}], "]"}], 
+         RowBox[{"\[ScriptU]", ",", "\[ScriptV]"}], "]"}], "]"}], 
        RowBox[{"R", "[", 
         RowBox[{"[", 
-         RowBox[{"u", ",", "v"}], "]"}], "]"}]}], ",", 
+         RowBox[{"\[ScriptU]", ",", "\[ScriptV]"}], "]"}], "]"}]}], ",", 
       RowBox[{"{", 
-       RowBox[{"u", ",", "d"}], "}"}], ",", 
+       RowBox[{"\[ScriptU]", ",", "d"}], "}"}], ",", 
       RowBox[{"{", 
-       RowBox[{"v", ",", "d"}], "}"}]}], "]"}], "]"}]}], 
+       RowBox[{"\[ScriptV]", ",", "d"}], "}"}]}], "]"}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{"\"\<Scalar Curvature =\>\"", 
-  RowBox[{"MatrixForm", "[", "S", "]"}]}], "\[IndentingNewLine]", 
+  RowBox[{
+  "MatrixForm", "[", "\[ScriptCapitalS]", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"T", "=", 
    RowBox[{"Table", "[", 
@@ -279,20 +307,21 @@ Cell[BoxData[{
          RowBox[{
           RowBox[{"R", "[", 
            RowBox[{"[", 
-            RowBox[{"u", ",", "v"}], "]"}], "]"}], "+", 
+            RowBox[{"\[ScriptU]", ",", "\[ScriptV]"}], "]"}], "]"}], "+", 
           RowBox[{
            RowBox[{"g", "[", 
             RowBox[{"[", 
-             RowBox[{"u", ",", "v"}], "]"}], "]"}], 
+             RowBox[{"\[ScriptU]", ",", "\[ScriptV]"}], "]"}], "]"}], 
            RowBox[{"(", 
-            RowBox[{"\[CapitalLambda]", "-", 
-             RowBox[{"S", "/", "2"}]}], ")"}]}]}], ")"}], "/", 
+            RowBox[{"\[Lambda]", "-", 
+             RowBox[{"\[ScriptCapitalS]", "/", "2"}]}], ")"}]}]}], ")"}], "/", 
         RowBox[{"(", 
          RowBox[{"8", "\[Pi]", " ", "G"}], ")"}]}]}], "]"}], ",", 
      RowBox[{"{", 
-      RowBox[{"u", ",", "d"}], "}"}], ",", 
+      RowBox[{"\[ScriptU]", ",", "d"}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"v", ",", "d"}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      RowBox[{"\[ScriptV]", ",", "d"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"\"\<Stress-Energy Tensor =\>\"", 
   RowBox[{"MatrixForm", "[", "T", "]"}]}]}], "Input",
  CellChangeTimes->{{3.683621932764196*^9, 3.6836220221230364`*^9}, {
@@ -380,7 +409,9 @@ Cell[BoxData[{
    3.8049527235167804`*^9, 3.8049527264447684`*^9}, {3.804952789524515*^9, 
    3.804952796030054*^9}, 3.804952857389037*^9, {3.804982678241564*^9, 
    3.8049826883388157`*^9}, {3.8049827408812113`*^9, 3.804982743217721*^9}, {
-   3.8049831816789227`*^9, 3.8049833096047945`*^9}}],
+   3.8049831816789227`*^9, 3.8049833096047945`*^9}, {3.849698821460211*^9, 
+   3.8496988294708047`*^9}, {3.850055066607288*^9, 3.8500550673656435`*^9}, 
+   3.850055208645743*^9}],
 
 Cell[BoxData[
  RowBox[{"\<\"Metric Tensor =\"\>", " ", 
@@ -423,7 +454,8 @@ Cell[BoxData[
    3.8049523879199195`*^9}, 3.8049525710641003`*^9, 3.8049527269882083`*^9, 
    3.8049527967858114`*^9, 3.8049528846852837`*^9, {3.804982660902654*^9, 
    3.8049826665828743`*^9}, 3.8049827043963127`*^9, 3.804982755682659*^9, {
-   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833139417486`*^9}],
+   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833139417486`*^9, 
+   3.849698836874663*^9, {3.850055474741415*^9, 3.85005549052391*^9}}],
 
 Cell[BoxData[
  RowBox[{"\<\"Christoffel Symbols =\"\>", " ", 
@@ -568,7 +600,8 @@ Cell[BoxData[
    3.8049523879199195`*^9}, 3.8049525710641003`*^9, 3.8049527269882083`*^9, 
    3.8049527967858114`*^9, 3.8049528846852837`*^9, {3.804982660902654*^9, 
    3.8049826665828743`*^9}, 3.8049827043963127`*^9, 3.804982755682659*^9, {
-   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833139537363`*^9}],
+   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833139417486`*^9, 
+   3.849698836874663*^9, {3.850055474741415*^9, 3.8500554905308905`*^9}}],
 
 Cell[BoxData[
  RowBox[{"\<\"Riemann Tensor =\"\>", " ", 
@@ -963,7 +996,8 @@ Cell[BoxData[
    3.8049523879199195`*^9}, 3.8049525710641003`*^9, 3.8049527269882083`*^9, 
    3.8049527967858114`*^9, 3.8049528846852837`*^9, {3.804982660902654*^9, 
    3.8049826665828743`*^9}, 3.8049827043963127`*^9, 3.804982755682659*^9, {
-   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.804983314030658*^9}],
+   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833139417486`*^9, 
+   3.849698836874663*^9, {3.850055474741415*^9, 3.8500554905697875`*^9}}],
 
 Cell[BoxData[
  RowBox[{"\<\"Kretschmann Scalar =\"\>", " ", 
@@ -979,7 +1013,8 @@ Cell[BoxData[
    3.8049523879199195`*^9}, 3.8049525710641003`*^9, 3.8049527269882083`*^9, 
    3.8049527967858114`*^9, 3.8049528846852837`*^9, {3.804982660902654*^9, 
    3.8049826665828743`*^9}, 3.8049827043963127`*^9, 3.804982755682659*^9, {
-   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833143713083`*^9}],
+   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833139417486`*^9, 
+   3.849698836874663*^9, {3.850055474741415*^9, 3.850055490984707*^9}}],
 
 Cell[BoxData[
  RowBox[{"\<\"Ricci Tensor =\"\>", " ", 
@@ -1024,7 +1059,8 @@ Cell[BoxData[
    3.8049523879199195`*^9}, 3.8049525710641003`*^9, 3.8049527269882083`*^9, 
    3.8049527967858114`*^9, 3.8049528846852837`*^9, {3.804982660902654*^9, 
    3.8049826665828743`*^9}, 3.8049827043963127`*^9, 3.804982755682659*^9, {
-   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.804983314382962*^9}],
+   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833139417486`*^9, 
+   3.849698836874663*^9, {3.850055474741415*^9, 3.850055491016593*^9}}],
 
 Cell[BoxData[
  RowBox[{"\<\"Scalar Curvature =\"\>", " ", 
@@ -1042,7 +1078,8 @@ Cell[BoxData[
    3.8049523879199195`*^9}, 3.8049525710641003`*^9, 3.8049527269882083`*^9, 
    3.8049527967858114`*^9, 3.8049528846852837`*^9, {3.804982660902654*^9, 
    3.8049826665828743`*^9}, 3.8049827043963127`*^9, 3.804982755682659*^9, {
-   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833143939505`*^9}],
+   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833139417486`*^9, 
+   3.849698836874663*^9, {3.850055474741415*^9, 3.8500554910215783`*^9}}],
 
 Cell[BoxData[
  RowBox[{"\<\"Stress-Energy Tensor =\"\>", " ", 
@@ -1088,7 +1125,8 @@ Cell[BoxData[
    3.8049523879199195`*^9}, 3.8049525710641003`*^9, 3.8049527269882083`*^9, 
    3.8049527967858114`*^9, 3.8049528846852837`*^9, {3.804982660902654*^9, 
    3.8049826665828743`*^9}, 3.8049827043963127`*^9, 3.804982755682659*^9, {
-   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.804983314396948*^9}]
+   3.804983183024641*^9, 3.8049832341092196`*^9}, 3.8049833139417486`*^9, 
+   3.849698836874663*^9, {3.850055474741415*^9, 3.8500554910245695`*^9}}]
 }, Open  ]]
 },
 WindowSize->{1920, 997},
@@ -1108,14 +1146,14 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 15691, 360, 446, "Input"],
-Cell[16274, 384, 1662, 41, 110, "Output"],
-Cell[17939, 427, 5590, 143, 450, "Output"],
-Cell[23532, 572, 15415, 393, 484, "Output"],
-Cell[38950, 967, 734, 14, 54, "Output"],
-Cell[39687, 983, 1734, 43, 132, "Output"],
-Cell[41424, 1028, 782, 16, 55, "Output"],
-Cell[42209, 1046, 1828, 44, 142, "Output"]
+Cell[580, 22, 17095, 391, 486, "Input"],
+Cell[17678, 415, 1733, 42, 110, "Output"],
+Cell[19414, 459, 5664, 144, 450, "Output"],
+Cell[25081, 605, 15491, 394, 484, "Output"],
+Cell[40575, 1001, 806, 15, 54, "Output"],
+Cell[41384, 1018, 1808, 44, 132, "Output"],
+Cell[43195, 1064, 856, 17, 55, "Output"],
+Cell[44054, 1083, 1904, 45, 142, "Output"]
 }, Open  ]]
 }
 ]

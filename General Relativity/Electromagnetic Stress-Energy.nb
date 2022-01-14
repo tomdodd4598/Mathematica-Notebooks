@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17794,        431]
-NotebookOptionsPosition[     17390,        413]
-NotebookOutlinePosition[     17732,        428]
-CellTagsIndexPosition[     17689,        425]
+NotebookDataLength[     18419,        444]
+NotebookOptionsPosition[     18015,        426]
+NotebookOutlinePosition[     18357,        441]
+CellTagsIndexPosition[     18314,        438]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,8 +21,6 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell[BoxData[{
- RowBox[{
-  RowBox[{"c", "=", "1"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"m", "=", "0"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -38,9 +36,8 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"X", "=", 
    RowBox[{"{", 
-    RowBox[{
-     RowBox[{"c", " ", "t"}], ",", "r", ",", "\[Theta]", ",", "\[Phi]"}], 
-    "}"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"t", ",", "r", ",", "\[Theta]", ",", "\[Phi]"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"A", "=", 
    TagBox[
@@ -52,12 +49,14 @@ Cell[BoxData[{
     Function[BoxForm`e$, 
      MatrixForm[BoxForm`e$]]]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"g", "=", " ", 
+  RowBox[{"g", "=", 
    TagBox[
     TagBox[
      RowBox[{"(", "\[NoBreak]", GridBox[{
         {
-         RowBox[{"-", 
+         RowBox[{
+          RowBox[{"-", 
+           SuperscriptBox["c", "2"]}], 
           RowBox[{"(", 
            RowBox[{"1", "-", 
             FractionBox[
@@ -259,7 +258,8 @@ Cell[BoxData[{
    3.757763440503216*^9, 3.757763454355198*^9}, {3.7577637060990806`*^9, 
    3.7577638212114353`*^9}, {3.757884800432862*^9, 3.7578848248124304`*^9}, {
    3.7578849216251945`*^9, 3.757884980680271*^9}, {3.7578856094578056`*^9, 
-   3.7578856109278746`*^9}}],
+   3.7578856109278746`*^9}, 3.849698560201971*^9, {3.8500595750543213`*^9, 
+   3.8500596073839164`*^9}}],
 
 Cell[BoxData[
  RowBox[{"\<\"Metric Tensor =\"\>", " ", 
@@ -267,19 +267,25 @@ Cell[BoxData[
    RowBox[{"(", "\[NoBreak]", GridBox[{
       {
        RowBox[{
-        RowBox[{"-", "1"}], "-", 
-        FractionBox[
-         RowBox[{"G", " ", 
-          SuperscriptBox["Q", "2"]}], 
-         RowBox[{"4", " ", "\[Pi]", " ", 
-          SuperscriptBox["r", "2"], " ", "\[Epsilon]"}]]}], "0", "0", "0"},
+        RowBox[{"-", 
+         SuperscriptBox["c", "2"]}], " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          FractionBox[
+           RowBox[{"G", " ", 
+            SuperscriptBox["Q", "2"]}], 
+           RowBox[{"4", " ", 
+            SuperscriptBox["c", "4"], " ", "\[Pi]", " ", 
+            SuperscriptBox["r", "2"], " ", "\[Epsilon]"}]]}], ")"}]}], "0", 
+       "0", "0"},
       {"0", 
        FractionBox["1", 
         RowBox[{"1", "+", 
          FractionBox[
           RowBox[{"G", " ", 
            SuperscriptBox["Q", "2"]}], 
-          RowBox[{"4", " ", "\[Pi]", " ", 
+          RowBox[{"4", " ", 
+           SuperscriptBox["c", "4"], " ", "\[Pi]", " ", 
            SuperscriptBox["r", "2"], " ", "\[Epsilon]"}]]}]], "0", "0"},
       {"0", "0", 
        SuperscriptBox["r", "2"], "0"},
@@ -307,7 +313,7 @@ Cell[BoxData[
    3.7384796160028505`*^9, 3.757762512143011*^9, 3.7577627703402834`*^9, 
    3.7577630056657577`*^9, 3.7577631070022135`*^9, 3.7577632183579903`*^9, 
    3.757763830227806*^9, 3.757763899501449*^9, 3.757884983908635*^9, 
-   3.7578856466822596`*^9}],
+   3.7578856466822596`*^9, 3.8500595822850323`*^9, 3.8500596703921556`*^9}],
 
 Cell[BoxData[
  RowBox[{"\<\"Electromagnetic Tensor =\"\>", " ", 
@@ -343,7 +349,7 @@ Cell[BoxData[
    3.7384796160028505`*^9, 3.757762512143011*^9, 3.7577627703402834`*^9, 
    3.7577630056657577`*^9, 3.7577631070022135`*^9, 3.7577632183579903`*^9, 
    3.757763830227806*^9, 3.757763899501449*^9, 3.757884983908635*^9, 
-   3.757885646687245*^9}],
+   3.7578856466822596`*^9, 3.8500595822850323`*^9, 3.85005967039817*^9}],
 
 Cell[BoxData[
  RowBox[{"\<\"Stress-Energy Tensor =\"\>", " ", 
@@ -355,7 +361,8 @@ Cell[BoxData[
          RowBox[{
           RowBox[{"G", " ", 
            SuperscriptBox["Q", "4"]}], "+", 
-          RowBox[{"4", " ", "\[Pi]", " ", 
+          RowBox[{"4", " ", 
+           SuperscriptBox["c", "4"], " ", "\[Pi]", " ", 
            SuperscriptBox["Q", "2"], " ", 
            SuperscriptBox["r", "2"], " ", "\[Epsilon]"}]}], 
          RowBox[{"128", " ", 
@@ -364,18 +371,23 @@ Cell[BoxData[
           SuperscriptBox["\[Epsilon]", "2"]}]]}], "0", "0", "0"},
       {"0", 
        FractionBox[
-        SuperscriptBox["Q", "2"], 
+        RowBox[{
+         SuperscriptBox["c", "6"], " ", 
+         SuperscriptBox["Q", "2"]}], 
         RowBox[{
          RowBox[{"8", " ", "G", " ", "\[Pi]", " ", 
           SuperscriptBox["Q", "2"], " ", 
           SuperscriptBox["r", "2"]}], "+", 
          RowBox[{"32", " ", 
+          SuperscriptBox["c", "4"], " ", 
           SuperscriptBox["\[Pi]", "2"], " ", 
           SuperscriptBox["r", "4"], " ", "\[Epsilon]"}]}]], "0", "0"},
       {"0", "0", 
        RowBox[{"-", 
         FractionBox[
-         SuperscriptBox["Q", "2"], 
+         RowBox[{
+          SuperscriptBox["c", "2"], " ", 
+          SuperscriptBox["Q", "2"]}], 
          RowBox[{"32", " ", 
           SuperscriptBox["\[Pi]", "2"], " ", 
           SuperscriptBox["r", "2"], " ", "\[Epsilon]"}]]}], "0"},
@@ -383,6 +395,7 @@ Cell[BoxData[
        RowBox[{"-", 
         FractionBox[
          RowBox[{
+          SuperscriptBox["c", "2"], " ", 
           SuperscriptBox["Q", "2"], " ", 
           SuperscriptBox[
            RowBox[{"Sin", "[", "\[Theta]", "]"}], "2"]}], 
@@ -408,7 +421,7 @@ Cell[BoxData[
    3.7384796160028505`*^9, 3.757762512143011*^9, 3.7577627703402834`*^9, 
    3.7577630056657577`*^9, 3.7577631070022135`*^9, 3.7577632183579903`*^9, 
    3.757763830227806*^9, 3.757763899501449*^9, 3.757884983908635*^9, 
-   3.757885646690237*^9}]
+   3.7578856466822596`*^9, 3.8500595822850323`*^9, 3.8500596704031553`*^9}]
 }, Open  ]]
 },
 WindowSize->{1920, 997},
@@ -428,10 +441,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 10994, 239, 403, "Input"],
-Cell[11577, 263, 1828, 46, 132, "Output"],
-Cell[13408, 311, 1458, 34, 102, "Output"],
-Cell[14869, 347, 2505, 63, 148, "Output"]
+Cell[580, 22, 11028, 239, 383, "Input"],
+Cell[11611, 263, 2071, 52, 132, "Output"],
+Cell[13685, 317, 1505, 34, 102, "Output"],
+Cell[15193, 353, 2806, 70, 148, "Output"]
 }, Open  ]]
 }
 ]

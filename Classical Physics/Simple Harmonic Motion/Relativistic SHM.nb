@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     59046,       1043]
-NotebookOptionsPosition[     58600,       1024]
-NotebookOutlinePosition[     58941,       1039]
-CellTagsIndexPosition[     58898,       1036]
+NotebookDataLength[     59155,       1043]
+NotebookOptionsPosition[     58708,       1024]
+NotebookOutlinePosition[     59050,       1039]
+CellTagsIndexPosition[     59007,       1036]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -463,7 +463,7 @@ enSHGF/mP2G/F/uHqiNARzAjhG521j8yFFD6//8jQBjqhzg6UqK/CzPXOA==
    3.658777850206314*^9}, 3.6587799587809505`*^9, 3.6587814086390114`*^9, 
    3.658781711315469*^9, {3.6714776395363345`*^9, 3.6714776543517046`*^9}, {
    3.688856767661879*^9, 3.688856856771536*^9}, {3.716417442450571*^9, 
-   3.7164174580632553`*^9}, 3.727470315017193*^9}],
+   3.7164174580632553`*^9}, 3.727470315017193*^9, 3.85005407747451*^9}],
 
 Cell[BoxData["\<\"Relativistic Simple Harmonic Motion:\"\>"], "Output",
  CellChangeTimes->{{3.6504817957293396`*^9, 3.6504818297923613`*^9}, 
@@ -517,7 +517,7 @@ Cell[BoxData["\<\"Relativistic Simple Harmonic Motion:\"\>"], "Output",
    3.658777850206314*^9}, 3.6587799587809505`*^9, 3.6587814086390114`*^9, 
    3.658781711315469*^9, {3.6714776395363345`*^9, 3.6714776543517046`*^9}, {
    3.688856767661879*^9, 3.688856856771536*^9}, {3.716417442450571*^9, 
-   3.7164174580632553`*^9}, 3.727470315026717*^9}],
+   3.7164174580632553`*^9}, 3.727470315017193*^9, 3.8500540774924345`*^9}],
 
 Cell[BoxData[
  GraphicsBox[{{}, {}, 
@@ -922,22 +922,22 @@ fJp5/TabJeH/AU4Fzy8=
    3.658777850206314*^9}, 3.6587799587809505`*^9, 3.6587814086390114`*^9, 
    3.658781711315469*^9, {3.6714776395363345`*^9, 3.6714776543517046`*^9}, {
    3.688856767661879*^9, 3.688856856771536*^9}, {3.716417442450571*^9, 
-   3.7164174580632553`*^9}, 3.7274703150467715`*^9}],
+   3.7164174580632553`*^9}, 3.727470315017193*^9, 3.8500540775174313`*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`t$$ = 1.5499873161315918`, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 10}}, Typeset`size$$ = {196., {10., 15.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$1439$$ = 0}, 
+    True, $CellContext`t$2081$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$1439$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$2081$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1019,11 +1019,11 @@ Cell[BoxData[
    3.658777850206314*^9}, 3.6587799587809505`*^9, 3.6587814086390114`*^9, 
    3.658781711315469*^9, {3.6714776395363345`*^9, 3.6714776543517046`*^9}, {
    3.688856767661879*^9, 3.688856856771536*^9}, {3.716417442450571*^9, 
-   3.7164174580632553`*^9}, 3.727470315217989*^9}]
+   3.7164174580632553`*^9}, 3.727470315017193*^9, 3.8500540775423603`*^9}]
 }, Open  ]]
 },
-WindowSize->{1916, 997},
-WindowMargins->{{Automatic, -4}, {Automatic, 0}},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1040,10 +1040,10 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 8350, 169, 292, "Input"],
-Cell[8933, 193, 15190, 272, 76, "Output"],
-Cell[24126, 467, 3929, 52, 31, "Output"],
-Cell[28058, 521, 24576, 403, 227, "Output"],
-Cell[52637, 926, 5947, 95, 121, "Output"]
+Cell[8933, 193, 15211, 272, 76, "Output"],
+Cell[24147, 467, 3953, 52, 31, "Output"],
+Cell[28103, 521, 24598, 403, 227, "Output"],
+Cell[52704, 926, 5988, 95, 121, "Output"]
 }, Open  ]]
 }
 ]

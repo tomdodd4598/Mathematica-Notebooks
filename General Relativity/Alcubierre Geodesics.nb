@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     42346,        798]
-NotebookOptionsPosition[     41941,        780]
-NotebookOutlinePosition[     42283,        795]
-CellTagsIndexPosition[     42240,        792]
+NotebookDataLength[     43274,        814]
+NotebookOptionsPosition[     42869,        796]
+NotebookOutlinePosition[     43211,        811]
+CellTagsIndexPosition[     43168,        808]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,6 +21,8 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell[BoxData[{
+ RowBox[{
+  RowBox[{"c", "=", "1"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"G", "=", "1"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -85,7 +87,9 @@ Cell[BoxData[{
   RowBox[{"g", "=", 
    RowBox[{"(", "\[NoBreak]", GridBox[{
       {
-       RowBox[{"-", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"c", "^", "2"}]}], "*", 
         RowBox[{"(", 
          RowBox[{"1", "-", 
           RowBox[{
@@ -328,7 +332,10 @@ Alcubierre Metric:\>\"", "\[IndentingNewLine]",
    3.8215120477847633`*^9, 3.8215120479047456`*^9}, {3.821512085208288*^9, 
    3.8215121332072*^9}, {3.8215123314308043`*^9, 3.821512331805601*^9}, {
    3.8215132474140787`*^9, 3.8215132632610664`*^9}, 3.821513299325194*^9, {
-   3.8215133362938156`*^9, 3.8215133398207216`*^9}}],
+   3.8215133362938156`*^9, 3.8215133398207216`*^9}, {3.8480315921766515`*^9, 
+   3.8480315938706956`*^9}, {3.848032240690973*^9, 3.848032251965978*^9}, {
+   3.84803229207309*^9, 3.8480322922420893`*^9}, {3.8500595106937895`*^9, 
+   3.850059511919857*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -604,7 +611,10 @@ mBezNYAfi6HzKxT9UjpchupqSttjcXf/tz/+kpSBMENU80kPMaKvqes+HMyA
    3.8215115070847216`*^9, 3.8215115415255694`*^9}, 3.8215119266069593`*^9, {
    3.8215119601042805`*^9, 3.821512004826397*^9}, 3.8215120621338367`*^9, {
    3.8215121003282514`*^9, 3.8215121471198254`*^9}, 3.8215132775496817`*^9, 
-   3.8215133543295465`*^9, 3.8215135429136066`*^9}],
+   3.8215133543295465`*^9, 3.8215135429136066`*^9, 3.8480313615141706`*^9, 
+   3.8480314125141106`*^9, 3.848031609770308*^9, {3.848032242336978*^9, 
+   3.8480322645719733`*^9}, 3.848032317266093*^9, 3.8500594834514723`*^9, 
+   3.850059529333592*^9}],
 
 Cell[BoxData["\<\"Linear Geodesic in Alcubierre Metric:\"\>"], "Output",
  CellChangeTimes->{
@@ -666,7 +676,10 @@ Cell[BoxData["\<\"Linear Geodesic in Alcubierre Metric:\"\>"], "Output",
    3.8215115070847216`*^9, 3.8215115415255694`*^9}, 3.8215119266069593`*^9, {
    3.8215119601042805`*^9, 3.821512004826397*^9}, 3.8215120621338367`*^9, {
    3.8215121003282514`*^9, 3.8215121471198254`*^9}, 3.8215132775496817`*^9, 
-   3.8215133543295465`*^9, 3.821513542930589*^9}],
+   3.8215133543295465`*^9, 3.8215135429136066`*^9, 3.8480313615141706`*^9, 
+   3.8480314125141106`*^9, 3.848031609770308*^9, {3.848032242336978*^9, 
+   3.8480322645719733`*^9}, 3.848032317266093*^9, 3.8500594834514723`*^9, 
+   3.8500595293540754`*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -677,11 +690,11 @@ Cell[BoxData[
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 100}}, Typeset`size$$ = {196., {4., 10.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$26253$$ = 0}, 
+    True, $CellContext`t$2488$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$26253$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$2488$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -775,7 +788,10 @@ Cell[BoxData[
    3.8215115070847216`*^9, 3.8215115415255694`*^9}, 3.8215119266069593`*^9, {
    3.8215119601042805`*^9, 3.821512004826397*^9}, 3.8215120621338367`*^9, {
    3.8215121003282514`*^9, 3.8215121471198254`*^9}, 3.8215132775496817`*^9, 
-   3.8215133543295465`*^9, 3.82151354297954*^9}]
+   3.8215133543295465`*^9, 3.8215135429136066`*^9, 3.8480313615141706`*^9, 
+   3.8480314125141106`*^9, 3.848031609770308*^9, {3.848032242336978*^9, 
+   3.8480322645719733`*^9}, 3.848032317266093*^9, 3.8500594834514723`*^9, 
+   3.85005952937788*^9}]
 }, Open  ]]
 },
 WindowSize->{1920, 997},
@@ -795,10 +811,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 14887, 308, 430, "Input"],
-Cell[15470, 332, 15464, 274, 76, "Output"],
-Cell[30937, 608, 4413, 60, 31, "Output"],
-Cell[35353, 670, 6572, 107, 111, "Output"]
+Cell[580, 22, 15217, 315, 450, "Input"],
+Cell[15800, 339, 15662, 277, 76, "Output"],
+Cell[31465, 618, 4615, 63, 31, "Output"],
+Cell[36083, 683, 6770, 110, 111, "Output"]
 }, Open  ]]
 }
 ]

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     81521,       1595]
-NotebookOptionsPosition[     81115,       1577]
-NotebookOutlinePosition[     81456,       1592]
-CellTagsIndexPosition[     81413,       1589]
+NotebookDataLength[     81659,       1598]
+NotebookOptionsPosition[     81252,       1580]
+NotebookOutlinePosition[     81594,       1595]
+CellTagsIndexPosition[     81551,       1592]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1373,7 +1373,8 @@ brYFQE+b+1KvfbFAh3MHEVPEBUCkHTpz5suxQH4IRTCA0AVAPbp5hrIgskCG
    3.7386743082499094`*^9, 3.7386743465016117`*^9}, 3.7386746566074896`*^9, 
    3.738676732361328*^9, 3.7386767667048645`*^9, {3.7577621353381014`*^9, 
    3.7577621518275843`*^9}, 3.7577622265809298`*^9, 3.7845984477752733`*^9, {
-   3.784598514599883*^9, 3.784598537398052*^9}}],
+   3.784598514599883*^9, 3.784598537398052*^9}, 3.8500613915275755`*^9, 
+   3.8500614346590247`*^9}],
 
 Cell[BoxData["\<\"Schwarzschild vs Newtonian Deflection:\"\>"], "Output",
  CellChangeTimes->{{3.683809769808963*^9, 3.683809788704282*^9}, {
@@ -1439,22 +1440,23 @@ Cell[BoxData["\<\"Schwarzschild vs Newtonian Deflection:\"\>"], "Output",
    3.7386743082499094`*^9, 3.7386743465016117`*^9}, 3.7386746566074896`*^9, 
    3.738676732361328*^9, 3.7386767667048645`*^9, {3.7577621353381014`*^9, 
    3.7577621518275843`*^9}, 3.7577622265809298`*^9, 3.7845984477752733`*^9, {
-   3.784598514599883*^9, 3.7845985374628525`*^9}}],
+   3.784598514599883*^9, 3.784598537398052*^9}, 3.8500613915275755`*^9, 
+   3.850061434725395*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 633.3881089355475, Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`t$$ = 0.0001, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0.0001, 4800}}, Typeset`size$$ = {
     196., {84., 89.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$22304$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$32870$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0.0001}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$22304$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$32870$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1572,11 +1574,12 @@ $CellContext`rn[$CellContext`t$$] Sin[
    3.7386743082499094`*^9, 3.7386743465016117`*^9}, 3.7386746566074896`*^9, 
    3.738676732361328*^9, 3.7386767667048645`*^9, {3.7577621353381014`*^9, 
    3.7577621518275843`*^9}, 3.7577622265809298`*^9, 3.7845984477752733`*^9, {
-   3.784598514599883*^9, 3.7845985375047398`*^9}}]
+   3.784598514599883*^9, 3.784598537398052*^9}, 3.8500613915275755`*^9, 
+   3.850061434770946*^9}]
 }, Open  ]]
 },
 WindowSize->{1920, 997},
-WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1593,9 +1596,9 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 17523, 420, 530, "Input"],
-Cell[18106, 444, 50093, 931, 78, "Output"],
-Cell[68202, 1377, 4791, 64, 31, "Output"],
-Cell[72996, 1443, 8103, 131, 269, "Output"]
+Cell[18106, 444, 50145, 932, 78, "Output"],
+Cell[68254, 1378, 4839, 65, 31, "Output"],
+Cell[73096, 1445, 8140, 132, 269, "Output"]
 }, Open  ]]
 }
 ]
