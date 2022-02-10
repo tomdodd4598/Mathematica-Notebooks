@@ -1,0 +1,213 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8015,        203]
+NotebookOptionsPosition[      7671,        186]
+NotebookOutlinePosition[      8042,        202]
+CellTagsIndexPosition[      7999,        199]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Delta]", "=", 
+   RowBox[{"1", "/", "10"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"m", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"g", "=", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v", "=", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rsol", "=", 
+   RowBox[{"RSolve", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"m", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"x", "[", 
+             RowBox[{"t", "+", "\[Delta]"}], "]"}], "-", 
+            RowBox[{"2", 
+             RowBox[{"x", "[", "t", "]"}]}], "+", 
+            RowBox[{"x", "[", 
+             RowBox[{"t", "-", "\[Delta]"}], "]"}]}], ")"}], "/", 
+          RowBox[{"\[Delta]", "^", "2"}]}]}], "\[Equal]", 
+        RowBox[{
+         RowBox[{"-", "m"}], "*", "g", "*", 
+         RowBox[{"x", "[", "t", "]"}]}]}], ",", 
+       RowBox[{
+        RowBox[{"x", "[", "0", "]"}], "\[Equal]", "0"}], ",", 
+       RowBox[{
+        RowBox[{"x", "[", "\[Delta]", "]"}], "\[Equal]", 
+        RowBox[{"v", "*", "\[Delta]"}]}]}], "}"}], ",", 
+     RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"DiscretePlot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "[", "t", "]"}], "/.", "rsol"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "2", ",", "\[Delta]"}], "}"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.8534807706737585`*^9, 3.8534808382168016`*^9}, {
+  3.853480905585815*^9, 3.853481008336247*^9}, {3.8534811228054075`*^9, 
+  3.8534811738723965`*^9}, {3.8534813161836987`*^9, 3.8534813248861*^9}, {
+  3.853481500582218*^9, 3.853481504346475*^9}, {3.8534815359188757`*^9, 
+  3.85348166870363*^9}, {3.8534817143226504`*^9, 3.853481729066896*^9}, {
+  3.853481761603084*^9, 3.8534817953544044`*^9}, {3.8534818264690604`*^9, 
+  3.8534818272744265`*^9}, {3.8534818631951866`*^9, 3.85348195936301*^9}, {
+  3.8534820271935883`*^9, 3.853482073786998*^9}, {3.853482105761599*^9, 
+  3.853482196278885*^9}, {3.85348227704755*^9, 3.8534824150526314`*^9}, {
+  3.853482513510338*^9, 3.8534825162374315`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.011000000000000001`], 
+    AbsoluteThickness[1.6], {
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.011000000000000001`], AbsoluteThickness[1.6], Opacity[0.2], 
+      LineBox[{{{0., 0.}, {0., 0}}, {{1., -0.108903421000001}, {1., 0}}, {{
+         1.1, -1.1028799099000004`}, {1.1, 0}}, {{
+         1.2, -1.9865684078100012`}, {1.2, 0}}, {{
+         1.3, -2.6716000649390006`}, {1.3, 0}}, {{1.4, -3.0894717155741}, {
+         1.4, 0}}, {{1.5, -3.1983961946517896`}, {1.5, 0}}, {{
+         1.6, -2.987481054264299}, {1.6, 0}}, {{1.7, -2.4778178084503795`}, {
+         1.7, 0}}, {{1.8, -1.7203727817914225`}, {1.8, 0}}, {{
+         1.9, -0.7908904769533228}, {1.9, 0}}},
+       VertexColors->None]}, 
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.011000000000000001`], AbsoluteThickness[1.6], Opacity[0.2], 
+      LineBox[{{{0.1, 1.}, {0.1, 0}}, {{0.2, 1.9000000000000001`}, {
+         0.2, 0}}, {{0.3, 2.6100000000000003`}, {0.3, 0}}, {{0.4, 3.059}, {
+         0.4, 0}}, {{0.5, 3.2020999999999993`}, {0.5, 0}}, {{0.6, 3.02499}, {
+         0.6, 0}}, {{0.7, 2.5453809999999994`}, {0.7, 0}}, {{0.8, 
+         1.8112338999999988`}, {0.8, 0}}, {{0.9, 0.8959634099999989}, {
+         0.9, 0}}, {{2., 0.2176808755801093}, {2., 0}}},
+       VertexColors->None]}}}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.011000000000000001`], 
+    AbsoluteThickness[1.6], {}, PointBox[CompressedData["
+1:eJxTTMoPSmViYGAQBWIQjQ5mzQSBnfYQ3gd7CP+kfXoaCPyzNwaDy/aPqkTW
+uT9kcYDI37R32/b575UKDgeIvgf21jpXZj2by+kAUf/Y/tcF1q+6xhwOYGPS
+ntlffLBt24cYmP6X9qqN91Iv/Ppjf/YMCLyx3zKLu3T36jdwd/CIzTOXeLh7
+P0T9R/sJP9vSU5d+3A8x/7P9xR85X36f+L8fov+LfZLN9Vv58awHIPZ9sw8q
+S/pks53jAMS8H/ZWhbX7AqZxHoCY99P+7IPu8phn7Acg5v22l3q7VGXSJeYD
+EPP+2BtN0J6ztO33/jRoOLTmL+/+6fdyPzTYHGxST3V8v3PaHgBD75tP
+     "]], {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesOrigin->{0, 0},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "MessagesHead" -> DiscretePlot, "AxisPadding" -> Scaled[0.02], 
+    "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "DefaultPlotStyle" -> {
+      Directive[
+       RGBColor[0.368417, 0.506779, 0.709798], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.880722, 0.611041, 0.142051], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.560181, 0.691569, 0.194885], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.922526, 0.385626, 0.209179], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.528488, 0.470624, 0.701351], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.772079, 0.431554, 0.102387], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.363898, 0.618501, 0.782349], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[1, 0.75, 0], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.647624, 0.37816, 0.614037], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.571589, 0.586483, 0.], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.915, 0.3325, 0.2125], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.40082222609352647`, 0.5220066643438841, 0.85], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.9728288904374106, 0.621644452187053, 0.07336199581899142], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.736782672705901, 0.358, 0.5030266573755369], 
+       AbsoluteThickness[1.6]], 
+      Directive[
+       RGBColor[0.28026441037696703`, 0.715, 0.4292089322474965], 
+       AbsoluteThickness[1.6]]}, "DomainPadding" -> Scaled[0.02], 
+    "PointSizeFunction" -> "SmallPointSize", "RangePadding" -> Scaled[0.05]},
+  PlotRange->{{0, 2}, {-3.1983961946517896`, 3.2020999999999993`}},
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.02]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.8534808118814406`*^9, 3.8534808388168592`*^9}, {
+   3.853480922008712*^9, 3.8534809405522857`*^9}, 3.853481174985387*^9, {
+   3.8534813206800585`*^9, 3.853481325468102*^9}, 3.8534815049494677`*^9, {
+   3.8534815371895313`*^9, 3.8534815449378047`*^9}, {3.8534816232712674`*^9, 
+   3.8534816692146273`*^9}, {3.8534817197772737`*^9, 3.853481729708895*^9}, {
+   3.8534817709536247`*^9, 3.8534817958804073`*^9}, 3.8534818277375727`*^9, {
+   3.85348186377518*^9, 3.8534819141147623`*^9}, 3.853481960794153*^9, {
+   3.853482058481147*^9, 3.8534820743650007`*^9}, {3.853482108450591*^9, 
+   3.853482196672886*^9}, {3.853482283277264*^9, 3.8534824156883097`*^9}, {
+   3.853482514178335*^9, 3.8534825168223515`*^9}}]
+}, Open  ]]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>2. Inherited,
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2189, 54, 276, "Input"],
+Cell[2772, 78, 4883, 105, 492, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     40226,        684]
-NotebookOptionsPosition[     39865,        667]
-NotebookOutlinePosition[     40207,        682]
-CellTagsIndexPosition[     40164,        679]
+NotebookDataLength[     41083,        700]
+NotebookOptionsPosition[     40722,        683]
+NotebookOutlinePosition[     41064,        698]
+CellTagsIndexPosition[     41021,        695]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -34,6 +34,10 @@ Cell[BoxData[{
    RowBox[{"Rationalize", "[", "0.0000", "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
+  RowBox[{"\[CapitalOmega]k", "=", 
+   RowBox[{"Rationalize", "[", "0.0000", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"\[CapitalOmega]\[CapitalLambda]", "=", 
    RowBox[{"Rationalize", "[", "0.6911", "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
@@ -42,7 +46,7 @@ Cell[BoxData[{
    RowBox[{"Rationalize", "[", "13.799", "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"tStart", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"tStart", "=", "0"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"tEnd", "=", "40"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -57,6 +61,9 @@ Cell[BoxData[{
       RowBox[{"\[CapitalOmega]r", "/", 
        RowBox[{
         RowBox[{"a", "[", "t", "]"}], "^", "4"}]}], "+", 
+      RowBox[{"\[CapitalOmega]k", "/", 
+       RowBox[{
+        RowBox[{"a", "[", "t", "]"}], "^", "2"}]}], "+", 
       "\[CapitalOmega]\[CapitalLambda]"}], "]"}]}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -79,33 +86,41 @@ Cell[BoxData[{
        RowBox[{"100", "tEnd"}]}], "}"}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"c", "=", "1"}], 
-  ";"}], "\[IndentingNewLine]", "\"\<FLRW Universe Hubble Distance and Cosmic \
-Horizon:\>\"", "\[IndentingNewLine]", 
+  RowBox[{"c", "=", "1"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"ev", "[", "t_", "]"}], ":=", 
    RowBox[{
-    RowBox[{"NIntegrate", "[", 
+    RowBox[{"(", 
      RowBox[{
-      RowBox[{
-       RowBox[{"c", "/", 
-        RowBox[{"a", "[", "z", "]"}]}], "/.", "sol"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"z", ",", "t", ",", 
-        RowBox[{"100", "tEnd"}]}], "}"}]}], "]"}], "[", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"a", "[", "t", "]"}], "/.", "sol"}], ")"}], 
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"c", "/", 
+          RowBox[{"a", "[", "z", "]"}]}], "/.", "sol"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"z", ",", "t", ",", 
+          RowBox[{"100", "tEnd"}]}], "}"}]}], "]"}]}], ")"}], "[", 
     RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"pt", "[", "t_", "]"}], ":=", 
    RowBox[{
-    RowBox[{"NIntegrate", "[", 
+    RowBox[{"(", 
      RowBox[{
-      RowBox[{
-       RowBox[{"c", "/", 
-        RowBox[{"a", "[", "z", "]"}]}], "/.", "sol"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"z", ",", "0", ",", "t"}], "}"}]}], "]"}], "[", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"a", "[", "t", "]"}], "/.", "sol"}], ")"}], 
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"c", "/", 
+          RowBox[{"a", "[", "z", "]"}]}], "/.", "sol"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"z", ",", "0", ",", "t"}], "}"}]}], "]"}]}], ")"}], "[", 
     RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"R", "=", 
@@ -114,7 +129,7 @@ Horizon:\>\"", "\[IndentingNewLine]",
      RowBox[{
       RowBox[{
        RowBox[{"a", "[", "tEnd", "]"}], 
-       RowBox[{"h", "[", "tEnd", "]"}]}], "/.", "sol"}], ",", 
+       RowBox[{"H", "[", "tEnd", "]"}]}], "/.", "sol"}], ",", 
      RowBox[{
       RowBox[{"c", "/", 
        RowBox[{"H", "[", "tEnd", "]"}]}], "/.", "sol"}]}], "]"}]}], 
@@ -141,7 +156,8 @@ Horizon:\>\"", "\[IndentingNewLine]",
          RowBox[{"R", "/", "4"}]}]}], "}"}]}], ",", 
      RowBox[{"Ticks", "\[Rule]", "None"}], ",", 
      RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+  ";"}], "\[IndentingNewLine]", "\"\<FLRW Universe Hubble Distance and Cosmic \
+Horizon:\>\"", "\[IndentingNewLine]", 
  RowBox[{"Animate", "[", 
   RowBox[{
    RowBox[{"Show", "[", 
@@ -157,18 +173,14 @@ Horizon:\>\"", "\[IndentingNewLine]",
            RowBox[{"c", "/", 
             RowBox[{"H", "[", "t", "]"}]}]}], "]"}]}], "}"}], "]"}], "/.", 
       "sol"}], ",", 
-     RowBox[{
-      RowBox[{"Graphics", "[", 
-       RowBox[{"{", 
-        RowBox[{"Black", ",", 
-         RowBox[{"Circle", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"0", ",", "0"}], "}"}], ",", 
-           RowBox[{
-            RowBox[{"a", "[", "t", "]"}], 
-            RowBox[{"ev", "[", "t", "]"}]}]}], "]"}]}], "}"}], "]"}], "/.", 
-      "sol"}], ",", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{"Black", ",", 
+        RowBox[{"Circle", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}], ",", 
+          RowBox[{"ev", "[", "t", "]"}]}], "]"}]}], "}"}], "]"}], ",", 
      RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]}], "]"}], ",", 
    RowBox[{"{", 
     RowBox[{"t", ",", "tStart", ",", "tEnd", ",", 
@@ -429,7 +441,9 @@ Horizon:\>\"", "\[IndentingNewLine]",
    3.8050300718589025`*^9, 3.8050301348673697`*^9}, {3.805030236713808*^9, 
    3.805030316000143*^9}, 3.805030500855264*^9, {3.805030531239049*^9, 
    3.8050305962465754`*^9}, {3.8050306491261826`*^9, 3.805030659798078*^9}, {
-   3.8050307435493307`*^9, 3.805030753757584*^9}}],
+   3.8050307435493307`*^9, 3.805030753757584*^9}, 3.8520124731809464`*^9, {
+   3.852014522322389*^9, 3.8520145997349157`*^9}, {3.852016866255491*^9, 
+   3.852016870906522*^9}}],
 
 Cell[BoxData["\<\"FLRW Universe Hubble Distance and Cosmic Horizon:\"\>"], \
 "Output",
@@ -520,22 +534,25 @@ Cell[BoxData["\<\"FLRW Universe Hubble Distance and Cosmic Horizon:\"\>"], \
    3.8050293148837385`*^9, {3.8050296254865932`*^9, 3.8050296463931274`*^9}, 
    3.8050296844536343`*^9, {3.8050301024334054`*^9, 3.8050301355142517`*^9}, 
    3.805030173659038*^9, 3.8050303177193756`*^9, 3.805030501352357*^9, 
-   3.805030597431357*^9, 3.8050306750980196`*^9, 3.8050307551891117`*^9}],
+   3.805030597431357*^9, 3.8050306750980196`*^9, 3.8050307551891117`*^9, 
+   3.85201243428747*^9, 3.852012474159936*^9, {3.8520145384303927`*^9, 
+   3.8520145418545895`*^9}, 3.852014601531911*^9, 3.8520146364423113`*^9, 
+   3.852014791610617*^9, 3.8520168933899117`*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 1., Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`t$$], 1, 40}}, Typeset`size$$ = {360., {170., 176.}}, 
+      Hold[$CellContext`t$$], 0, 40}}, Typeset`size$$ = {360., {170., 176.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`t$383608$$ = 0}, 
+    True, $CellContext`t$11568$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, "Variables" :> {$CellContext`t$$ = 1}, 
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$383608$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$11568$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -547,15 +564,11 @@ Cell[BoxData[
            Circle[{0, 
             0}, $CellContext`c/$CellContext`H[$CellContext`t$$]]}], \
 $CellContext`sol], 
-        ReplaceAll[
-         Graphics[{Black, 
-           
-           Circle[{0, 
-            0}, $CellContext`a[$CellContext`t$$] \
-$CellContext`ev[$CellContext`t$$]]}], $CellContext`sol], AspectRatio -> 
-        Automatic], 
-      "Specifications" :> {{$CellContext`t$$, 1, 40, Appearance -> "Labeled", 
-         AnimationRate -> Rational[39, 25], AnimationRunning -> False, 
+        Graphics[{Black, 
+          Circle[{0, 0}, 
+           $CellContext`ev[$CellContext`t$$]]}], AspectRatio -> Automatic], 
+      "Specifications" :> {{$CellContext`t$$, 0, 40, Appearance -> "Labeled", 
+         AnimationRate -> Rational[8, 5], AnimationRunning -> False, 
          RefreshRate -> 120, 
          AppearanceElements -> {
           "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
@@ -662,7 +675,10 @@ $CellContext`ev[$CellContext`t$$]]}], $CellContext`sol], AspectRatio ->
    3.8050293148837385`*^9, {3.8050296254865932`*^9, 3.8050296463931274`*^9}, 
    3.8050296844536343`*^9, {3.8050301024334054`*^9, 3.8050301355142517`*^9}, 
    3.805030173659038*^9, 3.8050303177193756`*^9, 3.805030501352357*^9, 
-   3.805030597431357*^9, 3.8050306750980196`*^9, 3.805030755230068*^9}]
+   3.805030597431357*^9, 3.8050306750980196`*^9, 3.8050307551891117`*^9, 
+   3.85201243428747*^9, 3.852012474159936*^9, {3.8520145384303927`*^9, 
+   3.8520145418545895`*^9}, 3.852014601531911*^9, 3.8520146364423113`*^9, 
+   3.852014791610617*^9, 3.8520168944389315`*^9}]
 }, Open  ]]
 },
 WindowSize->{1920, 997},
@@ -682,9 +698,9 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 23668, 409, 352, "Input"],
-Cell[24251, 433, 6658, 89, 31, "Output"],
-Cell[30912, 524, 8937, 140, 441, "Output"]
+Cell[580, 22, 24231, 423, 372, "Input"],
+Cell[24814, 447, 6855, 92, 31, "Output"],
+Cell[31672, 541, 9034, 139, 441, "Output"]
 }, Open  ]]
 }
 ]
