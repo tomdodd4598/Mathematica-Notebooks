@@ -10,16 +10,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18639,        480]
-NotebookOptionsPosition[     18321,        464]
-NotebookOutlinePosition[     18663,        479]
-CellTagsIndexPosition[     18620,        476]
+NotebookDataLength[     15638,        417]
+NotebookOptionsPosition[     15396,        404]
+NotebookOutlinePosition[     15738,        419]
+CellTagsIndexPosition[     15695,        416]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{"w", "=", "200"}], ";", 
@@ -347,7 +345,7 @@ Cell[BoxData[{
        RowBox[{"v", ",", "br", ",", "Thin"}], "]"}]}], "}"}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{"anim", "[", 
-  RowBox[{"compareItems", ",", "v"}], "]"}]}], "Input",
+  RowBox[{"xtItems", ",", "v"}], "]"}]}], "Input",
  CellChangeTimes->{{3.850388929540634*^9, 3.8503889330044107`*^9}, {
    3.8503897151529093`*^9, 3.850389836410122*^9}, {3.8503898949471707`*^9, 
    3.850389902380368*^9}, {3.850390051099291*^9, 3.850390067700989*^9}, {
@@ -402,65 +400,7 @@ Cell[BoxData[{
    3.8504865807171793`*^9}, 3.8504866139701705`*^9, {3.8504866528291674`*^9, 
    3.850486817752*^9}, {3.850486854923747*^9, 3.850486921601293*^9}, {
    3.8504885162673054`*^9, 3.8504885169692507`*^9}, 3.850488723644521*^9, 
-   3.8504888045199146`*^9}],
-
-Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`v$$ = -0.3846672058105469, Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`v$$], 
-      Rational[-1, 2], 
-      Rational[1, 2]}}, Typeset`size$$ = {360., {177., 183.}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`v$78726$$ = 0}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, "Variables" :> {$CellContext`v$$ = Rational[-1, 2]}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`v$$, $CellContext`v$78726$$, 0]}, 
-      "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, 
-      "Body" :> $CellContext`diagram[$CellContext`compareItems, \
-$CellContext`v$$], "Specifications" :> {{$CellContext`v$$, 
-         Rational[-1, 2], 
-         Rational[1, 2], AnimationDirection -> ForwardBackward, AnimationRate -> 
-         Rational[1, 10], 
-         AppearanceElements -> {
-          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
-           "DirectionButton"}}}, 
-      "Options" :> {
-       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
-        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
-        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {216., 222.}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Animate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{
-  3.8504841358522496`*^9, {3.8504841728568697`*^9, 3.850484194976163*^9}, {
-   3.8504842505665674`*^9, 3.850484314535485*^9}, 3.8504843505330524`*^9, {
-   3.8504852973810797`*^9, 3.8504853235112667`*^9}, {3.8504853815476055`*^9, 
-   3.8504854034626837`*^9}, 3.850485455906228*^9, {3.8504858403896184`*^9, 
-   3.850485875756312*^9}, 3.8504861572965436`*^9, {3.8504861975434628`*^9, 
-   3.850486225233225*^9}, 3.850486322366357*^9, {3.850486470916191*^9, 
-   3.850486495899304*^9}, 3.8504865359256725`*^9, 3.850486581944235*^9, 
-   3.850486614466812*^9, 3.850486660018518*^9, 3.85048683327662*^9, {
-   3.8504868687259016`*^9, 3.8504868862493706`*^9}, 3.8504869224108396`*^9, 
-   3.850488518469062*^9, {3.8504887246904306`*^9, 3.8504887428372173`*^9}, {
-   3.850488801399849*^9, 3.8504888053554554`*^9}}]
-}, Open  ]]
+   3.8504888045199146`*^9, 3.8630716851160607`*^9}]
 },
 WindowSize->{1920, 997},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
@@ -478,10 +418,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[CellGroupData[{
-Cell[580, 22, 14815, 382, 532, "Input"],
-Cell[15398, 406, 2907, 55, 455, "Output"]
-}, Open  ]]
+Cell[558, 20, 14834, 382, 532, "Input"]
 }
 ]
 *)
