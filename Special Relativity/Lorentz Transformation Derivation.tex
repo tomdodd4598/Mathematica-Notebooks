@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{bigstrut}
+\usepackage{braket}
+\usepackage{dsfont}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{qcircuit}
+\usepackage{setspace}
+\usepackage{siunitx}
+\usepackage{svg}
+\usepackage{titling}
+\usepackage{url}
+
+\predate{}
+\postdate{}
+
+\usepackage{hyperref}
+
+\renewcommand{\baselinestretch}{1.25}
+
+\setlength{\droptitle}{-8em}
+
+\title{A Simple Derivation of the\\Lorentz Transformations}
+\author{Tom Dodd}
+\date{}
+
+\begin{document}
+
+\maketitle
+\vspace{-2em}
+
+\newcommand{\binner}[2]{
+    \left\langle #1, #2 \right\rangle
+}
+
+\begin{abstract}
+We present a derivation, modified from Leonard Susskind's first lecture on special relativity from \textit{The Theoretical Minimum}, of the one-dimensional Lorentz transformations using the two postulates of special relativity and the principle that physics is rotationally, or, in one spatial dimension, ``directionally'', invariant. The derivation makes use of natural units and a spacetime diagram, which may be new to some readers.
+\end{abstract}
+
+\section{The Relativity of Simultaneity}
+
+We identify the spatial origins and synchronise the clocks of the reference frames of two relatively moving observers, the ``bystander'' and the ``traveller'', using coordinates $\left(x,t\right)$ and $\left(x^\prime,t^\prime\right)$, respectively. On a spacetime diagram, the vertical and horizontal axes correspond to the lines of constant space and time for the bystander $x=0$ and $t=0$, respectively. The trajectory of the traveller, moving to the right at speed $v$, is the line with equation $x=vt$, or, by definition, $x^\prime=0$.
+\newline
+
+The traveller is at the leftmost end of a moving train, of some length $L$, with a light source. At the rightmost end is another light source, and in the middle is a light detector. The traveller has set up timers so that, in their reference frame, the sources emit pulses of light which reach the detector simultaneously. Additionally, the pulse from their end of the train will be emitted at time $t^\prime=0$. The trajectories of light are described by $\ang{45}$ lines.
+
+\pagebreak
+
+\begin{figure}[htbp]
+\centering
+\includesvg[width=360pt]{LT3.svg}
+\caption{\textit{Spacetime diagram illustrating the experiment. The red lines describe the trajectories of the light pulses.}}
+\label{fig:LT3}
+\end{figure}
+
+\vspace{1.6em}
+
+As is clear from the diagram, although the pulses are emitted simultaneously in the traveller's frame, they are not emitted simultaneously in the bystander's frame. An astounding result in its own right, we now want to find the equation of the line of constant time for the traveller $t^\prime=0$ passing through both light emission events.
+
+\section{The Lorentz Transformations}
+
+Drawing some additional lines on the diagram, we have two right-angled triangles with a common edge. Since the distances from the middle to each end of the train are equal, the triangles are congruent. This means that the equation of the line of time $t^\prime=0$ for the traveller is $t=vx$.
+\newline
+
+\begin{figure}[htbp]
+\centering
+\includesvg[width=360pt]{LT4.svg}
+\caption{\textit{Additional lines on the spacetime diagram highlight the symmetry of the coordinate transformation.}}
+\label{fig:LT4}
+\end{figure}
+
+\vspace{2em}
+
+The equations of the lines $x^\prime=0$ and $t^\prime=0$ can also be written as $x-vt=0$ and $t-vx=0$, respectively. Therefore, for general $x$ and $t$, we must have that $x^\prime=A\left(x-vt\right)$ and $t^\prime=B\left(t-vx\right)$, where $A$ and $B$ are constants to be determined. They may depend on the only free variable we have used, $v$, but using the assumption that physics is rotationally, or directionally, invariant, they may only depend on the magnitude of $v$.
+\newline
+
+We can use the postulates of special relativity to determine $A$ and $B$. The second postulate states that the speed of light is the same in both reference frames, and so the right-moving light pulse is described by both $x=t$ and $x^\prime=t^\prime$. Plugging in, we immediately find that $A=B$.
+\newline
+
+The first postulate states that the laws of physics are the same in both reference frames, and so we can also transform from the coordinates of the traveller to the bystander in the same way, except using a relative speed of the opposite sign. This gives us $x=A\left(x^\prime+vt^\prime\right)$ and $t=A\left(t^\prime+vx^\prime\right)$. Plugging back into the first set of transformations, we find that $A^2=1/\left(1-v^2\right)$.
+\newline
+
+Defining $\gamma=\sqrt{A}$ and restoring the factors of $c$, we have the final expressions for the Lorentz factor and one-dimensional Lorentz transformations,
+
+$$\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}},$$
+
+$$x^\prime=\gamma\left(x-vt\right),$$
+
+$$t^\prime=\gamma\left(t-\frac{vx}{c^2}\right).$$
+
+\end{document}

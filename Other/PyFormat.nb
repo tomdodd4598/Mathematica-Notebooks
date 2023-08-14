@@ -1,0 +1,126 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4357,        117]
+NotebookOptionsPosition[      4117,        104]
+NotebookOutlinePosition[      4459,        119]
+CellTagsIndexPosition[      4416,        116]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"PyFormat", "[", "x_", "]"}], ":=", 
+   RowBox[{"ToString", "[", 
+    RowBox[{"x", ",", "InputForm"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"PyFormat", "[", 
+    RowBox[{"x_", "?", "NumericQ"}], "]"}], ":=", 
+   RowBox[{"ToString", "[", 
+    RowBox[{
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"IntegerQ", "[", "x", "]"}], ",", "x", ",", 
+       RowBox[{"N", "[", "x", "]"}]}], "]"}], ",", "InputForm"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"PyFormat", "[", "x_Complex", "]"}], ":=", 
+   RowBox[{"StringReplace", "[", 
+    RowBox[{
+     RowBox[{"ToString", "[", 
+      RowBox[{
+       RowBox[{"N", "[", "x", "]"}], ",", "InputForm"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"\"\< \>\"", "\[Rule]", "\"\<\>\""}], ",", 
+       RowBox[{"\"\<*\>\"", "\[Rule]", "\"\<\>\""}], ",", 
+       RowBox[{"\"\<I\>\"", "\[Rule]", "\"\<j\>\""}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"PyFormat", "[", "x_List", "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Length", "[", "x", "]"}], "\[Equal]", "1"}], ",", 
+     RowBox[{"\"\<(\>\"", "<>", 
+      RowBox[{"PyFormat", "[", 
+       RowBox[{"x", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "]"}], "<>", "\"\<,)\>\""}], ",", 
+     RowBox[{"StringRiffle", "[", 
+      RowBox[{
+       RowBox[{"PyFormat", "/@", "x"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\"\<(\>\"", ",", "\"\<, \>\"", ",", "\"\<)\>\""}], "}"}]}], 
+      "]"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"PyFormat", "[", "x_Association", "]"}], ":=", 
+   RowBox[{"StringRiffle", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"PyFormat", "[", "#", "]"}], "<>", "\"\<: \>\"", "<>", 
+         RowBox[{"PyFormat", "[", 
+          RowBox[{"x", "[", "#", "]"}], "]"}]}], ")"}], "&"}], "/@", 
+      RowBox[{"Keys", "[", "x", "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<{\>\"", ",", "\"\<, \>\"", ",", "\"\<}\>\""}], "}"}]}], 
+    "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.9006726323051357`*^9, 3.9006726373331203`*^9}, {
+   3.900672674100542*^9, 3.900672724208782*^9}, {3.900672789449075*^9, 
+   3.9006727944660873`*^9}, {3.9006737497320538`*^9, 3.9006737722285705`*^9}, 
+   3.9006738604255066`*^9, 3.900674080541407*^9, {3.9006741722890043`*^9, 
+   3.9006741986135817`*^9}, {3.9006742353377104`*^9, 3.900674302714634*^9}, {
+   3.900674431936332*^9, 3.9006744480883017`*^9}, {3.9006746809967356`*^9, 
+   3.9006747037035737`*^9}, {3.9006749699399543`*^9, 
+   3.9006749789463415`*^9}, {3.9006754091929054`*^9, 3.900675454508032*^9}, {
+   3.9006755008595123`*^9, 3.9006755107322583`*^9}, {3.9006755513607187`*^9, 
+   3.900675556600137*^9}, {3.900675829941269*^9, 3.900675861330247*^9}, {
+   3.9006759059831133`*^9, 3.900675931370656*^9}, {3.9006759785615396`*^9, 
+   3.900675980627973*^9}, {3.90068075123003*^9, 3.900680760569075*^9}, {
+   3.9006964197460904`*^9, 3.9006964380826054`*^9}, {3.900704393993922*^9, 
+   3.9007044014635067`*^9}, {3.9007044968303833`*^9, 3.900704519527809*^9}, {
+   3.9007047364689507`*^9, 3.900704737589402*^9}, {3.900704773849087*^9, 
+   3.9007048035496855`*^9}, {3.9007049056742663`*^9, 3.900704906913865*^9}, {
+   3.9007049640501323`*^9, 3.9007049853543787`*^9}, {3.9007050285467815`*^9, 
+   3.900705062999995*^9}, 3.90070509717996*^9, {3.900705132814966*^9, 
+   3.900705218259754*^9}}]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 7, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3555, 82, 112, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
